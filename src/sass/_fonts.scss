@@ -1,0 +1,29 @@
+@font-face {
+  font-weight: 300;
+  font-family: "Coves";
+  font-style: normal;
+  font-display: swap;
+  src: local('Coves Light'), local('Coves-Light'),
+       url("fonts/coves-light.woff2") format("woff2"),
+       url("fonts/coves-light.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Coves";
+    font-style: normal;
+    font-display: swap;
+    src: local('Coves Bold'), local('Coves-Bold'),
+         url("fonts/coves-bold.woff2") format("woff2"),
+         url("fonts/coves-bold.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "Great Vibes";
+    font-style: normal;
+    font-display: swap;
+    src: local('Great Vibes'), local('GreatVibes-Regular'),
+         url("fonts/greatvibes-regular.woff2") format("woff2"),
+         url("fonts/greatvibes-regular.woff") format("woff");
+}

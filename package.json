@@ -16,14 +16,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sergeykonovalenko/han-design-wedding.git"
+    "url": "https://github.com/sergeykonovalenko/wedding-han-design.git"
   },
   "author": "Sergey Konovalenko <sergeykonovalenko5550199@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sergeykonovalenko/han-design-wedding.git"
+    "url": "https://github.com/sergeykonovalenko/wedding-han-design.git"
   },
-  "homepage": "https://github.com/sergeykonovalenko/han-design-wedding.git",
+  "homepage": "https://github.com/sergeykonovalenko/wedding-han-design.git",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.5",
