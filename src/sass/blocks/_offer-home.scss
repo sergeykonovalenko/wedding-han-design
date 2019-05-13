@@ -1,0 +1,38 @@
+.offer-home {
+    position: relative;
+    background-color: #b3cfa6;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //overflow-x: hidden;
+}
+
+.no-js .offer-home,
+.no-webp .offer-home {
+    background-image: url("img/bg/offer-home.jpg");
+}
+
+.webp .offer-home {
+    background-image: url("img/bg/offer-home.webp");
+}
+
+.offer-home__title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 590px;
+    padding: 90px 0;
+}
+
+.offer-home__title-box h1 {
+    width: 880px;
+    margin-bottom: 0;
+    padding: 44px 30px 38px;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 0.72em;
+    font-family: "Great Vibes", "Times New Roman", serif;
+    text-align: center;
+    color: #514e4e;
+    background-color: rgba(255, 255, 255, 0.83);
+}

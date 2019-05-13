@@ -1,0 +1,54 @@
+.decor {
+    position: absolute;
+    pointer-events: none;
+}
+
+.decor--1 {
+    top: -115px;
+    left: -75px;
+}
+
+.decor--2 {
+    right: -230px;
+    bottom: -310px;
+}
+
+.decor__element {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.decor__element--1 {
+    width: 271px;
+    height: 297px;
+}
+
+.decor__element--2 {
+    width: 408px;
+    height: 439px;
+}
+
+.no-js .decor__element--1,
+.no-webp .decor__element--1 {
+    background-image: url("img/base/offer-home-decor-1.png");
+}
+
+.webp .decor__element--1 {
+    background-image: url("img/base/offer-home-decor-1.webp");
+}
+
+.no-js .decor__element--2,
+.no-webp .decor__element--2 {
+    background-image: url("img/base/offer-home-decor-2.png");
+}
+
+.webp .decor__element--2 {
+    background-image: url("img/base/offer-home-decor-2.webp");
+}
+
+@media screen and (max-width: 1650px) {
+    .decor--1 {
+        left: -135px;
+    }
+}

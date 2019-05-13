@@ -1,0 +1,17 @@
+.index-wrapper {
+    background-repeat: no-repeat;
+    background-position: calc(50% + 565px) 36vh;
+}
+
+body:not(.is-mobile) .index-wrapper {
+    background-attachment: fixed;
+}
+
+.no-js .index-wrapper,
+.no-webp .index-wrapper {
+    background-image: url("img/bg/about-home.png");
+}
+
+.webp .index-wrapper {
+    background-image: url("img/bg/about-home.webp");
+}

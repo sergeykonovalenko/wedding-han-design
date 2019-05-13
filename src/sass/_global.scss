@@ -1,4 +1,5 @@
 body {
+    height: 99999px;
     margin: 0;
     padding: 0;
     font-weight: 300;
@@ -7,6 +8,7 @@ body {
     color: #151414;
     word-wrap: break-word;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 a {
