@@ -1,0 +1,31 @@
+.offer-social {
+    @include reset-list;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate(0, -50%);
+}
+
+.offer-social__item {
+    margin-bottom: 2px;
+}
+
+.offer-social__item:last-child {
+    margin-bottom: 0;
+}
+
+.offer-social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 112px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.offer-social__link:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}

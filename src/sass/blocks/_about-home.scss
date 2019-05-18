@@ -1,20 +1,21 @@
 .about-home {
-    padding: 145px 0;
+    padding-bottom: 145px;
 }
 
 .about-home__text {
     height: 100%;
-    padding-top: 12px;
+    padding-top: 4px;
     padding-left: 22px;
     border-left: 2px solid #d0d5cc;
 }
 
 .about-home__text h2 {
-    margin-bottom: 37px;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 60px;
-    line-height: 0.72em;
+    line-height: 1em;
     font-family: "Great Vibes", "Times New Roman", serif;
+    text-align: center;
     color: #5c5c57;
 }
 

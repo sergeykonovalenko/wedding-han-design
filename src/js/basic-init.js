@@ -7,11 +7,26 @@ $(document).ready(function () {
         document.querySelector("body").classList.add('is-mobile');
     }
 
-    let scene = document.getElementById('scene-1');
-    let parallaxInstance = new Parallax(scene);
+    // parallax
+    let decor = document.querySelectorAll('.decor');
+    decor.forEach(function (decorItem) {
+        let parallaxDecor = new Parallax(decorItem);
+    });
 
-    let scene2 = document.getElementById('scene-2');
-    let parallaxInstance2 = new Parallax(scene2);
+    // offer-slider
+    $('.offer-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        fade: true,
+        speed: 1800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3500,
+        pauseOnFocus: false,
+        pauseOnHover: false
+    });
 
     function isMobile() {
         return $.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));

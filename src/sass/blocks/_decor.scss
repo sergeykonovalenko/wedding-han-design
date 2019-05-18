@@ -1,5 +1,6 @@
 .decor {
     position: absolute;
+    z-index: 3;
     pointer-events: none;
 }
 
@@ -11,6 +12,11 @@
 .decor--2 {
     right: -230px;
     bottom: -310px;
+}
+
+.decor--3 {
+    top: -274px;
+    left: -159px;
 }
 
 .decor__element {
@@ -29,6 +35,12 @@
     height: 439px;
 }
 
+.decor__element--3 {
+    width: 438px;
+    height: 695px;
+}
+
+// decor 1
 .no-js .decor__element--1,
 .no-webp .decor__element--1 {
     background-image: url("img/base/offer-home-decor-1.png");
@@ -38,6 +50,7 @@
     background-image: url("img/base/offer-home-decor-1.webp");
 }
 
+// decor 2
 .no-js .decor__element--2,
 .no-webp .decor__element--2 {
     background-image: url("img/base/offer-home-decor-2.png");
@@ -45,6 +58,16 @@
 
 .webp .decor__element--2 {
     background-image: url("img/base/offer-home-decor-2.webp");
+}
+
+// decor 3
+.no-js .decor__element--3,
+.no-webp .decor__element--3 {
+    background-image: url("img/base/triggers-decor.png");
+}
+
+.webp .decor__element--3 {
+    background-image: url("img/base/triggers-decor.webp");
 }
 
 @media screen and (max-width: 1650px) {

@@ -29,6 +29,7 @@
     <script src="js/modernizr-custom.js"></script>
     <!-- Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -120,11 +121,31 @@
                 </div>
             </div>
         </div>
-        <div class="decor decor--1" id="scene-1">
-            <div class="decor__element decor__element--1" data-depth="0.5"></div>
+        <ul class="offer-social">
+            <li class="offer-social__item">
+                <a class="offer-social__link" href="#" target="_blank">
+                    <span class="visually-hidden">Our Facebook group</span>
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 96.1" width="16" height="30" fill="#fff"><path d="M50 0H37.5c-14 0-23.1 9.3-23.1 23.7v10.9H2c-1.1 0-2 .9-2 2v15.8c0 1.1.9 2 2 2h12.5v39.9c0 1.1.9 2 2 2h16.4c1.1 0 2-.9 2-2v-40h14.7c1.1 0 2-.9 2-2V36.5c0-.5-.2-1-.6-1.4s-.9-.6-1.4-.6H34.8v-9.2c0-4.4 1.1-6.7 6.8-6.7H50c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></svg>
+                </a>
+            </li>
+            <li class="offer-social__item">
+                <a class="offer-social__link" href="#" target="_blank">
+                    <span class="visually-hidden">Our Instagram Page</span>
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="33" height="33" fill="#fff"><path d="M352 0H160C71.648 0 0 71.648 0 160v192c0 88.352 71.648 160 160 160h192c88.352 0 160-71.648 160-160V160C512 71.648 440.352 0 352 0zm112 352c0 61.76-50.24 112-112 112H160c-61.76 0-112-50.24-112-112V160C48 98.24 98.24 48 160 48h192c61.76 0 112 50.24 112 112v192z"/><path d="M256 128c-70.688 0-128 57.312-128 128s57.312 128 128 128 128-57.312 128-128-57.312-128-128-128zm0 208c-44.096 0-80-35.904-80-80 0-44.128 35.904-80 80-80s80 35.872 80 80c0 44.096-35.904 80-80 80z"/><circle cx="393.6" cy="118.4" r="17.056"/></svg>
+                </a>
+            </li>
+        </ul>
+        <div class="offer-slider">
+            <div class="offer-slider__item"></div>
+            <div class="offer-slider__item"></div>
+            <div class="offer-slider__item"></div>
+            <div class="offer-slider__item"></div>
         </div>
-        <div class="decor decor--2" id="scene-2">
-            <div class="decor__element decor__element--2" data-depth="0.5"></div>
+        <div class="decor decor--1">
+            <div class="decor__element decor__element--1" data-depth="0.3"></div>
+        </div>
+        <div class="decor decor--2">
+            <div class="decor__element decor__element--2" data-depth="0.3"></div>
         </div>
     </section>
 
@@ -134,7 +155,7 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="about-home__text">
-                            <h2>About our company our compan our compan</h2>
+                            <h2>About our company</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                     </div>
@@ -147,36 +168,50 @@
                 </div>
             </div>
         </section>
-
         <section class="triggers">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="triggers__title">Four phillars of why you should choose us</h2>
+                        <h2 class="triggers__title">Four phillars of why you<br> should choose us</h2>
                         <ul class="triggers__list">
                             <li class="triggers__item">
-                                Free delivery with order over some amount of money
+                                <p class="triggers__text">
+                                    Free delivery with<br> order over some amount of money
+                                </p>
                             </li>
                             <li class="triggers__item">
-                                You can design your own project, just share with us your conception Every item can be personalised just especially for you
+                                <p class="triggers__text">
+                                    You can design your<br> own project, just share with us your conception Every item can be personalised just especially for you
+                                </p>
                             </li>
                             <li class="triggers__item">
-                                Personal Advices - you can contact us any time you want our contact is: 1234567890
+                                <p class="triggers__text">
+                                    Personal Advices - you can contact us any time you want our contact is: <a href="tel:1234567890">1234567890</a>
+                                </p>
                             </li>
                             <li class="triggers__item">
-                                The best prices and great quality! You don't believe? Order samples!
+                                <p class="triggers__text">
+                                    The best prices and<br> great quality! You don't believe? Order samples!
+                                </p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
+            <div class="decor decor--3">
+                <div class="decor__element decor__element--3" data-depth="0.3"></div>
+            </div>
         </section>
     </div>
+
+    
 
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <!-- Parallax -->
     <script src="js/parallax.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="js/slick.min.js"></script>
     <!-- Bootstrap Bundle -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Masked Input -->

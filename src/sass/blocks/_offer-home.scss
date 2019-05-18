@@ -1,19 +1,5 @@
 .offer-home {
     position: relative;
-    background-color: #b3cfa6;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    //overflow-x: hidden;
-}
-
-.no-js .offer-home,
-.no-webp .offer-home {
-    background-image: url("img/bg/offer-home.jpg");
-}
-
-.webp .offer-home {
-    background-image: url("img/bg/offer-home.webp");
 }
 
 .offer-home__title-box {
@@ -25,7 +11,13 @@
 }
 
 .offer-home__title-box h1 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 880px;
+    min-height: 226px;
     margin-bottom: 0;
     padding: 44px 30px 38px;
     font-weight: 400;
