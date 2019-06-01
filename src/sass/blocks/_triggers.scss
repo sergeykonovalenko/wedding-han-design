@@ -113,8 +113,13 @@
     color: #9d824f;
 }
 
+.triggers__decor {
+    top: -274px;
+    left: -159px;
+}
+
 @media screen and (max-width: 1780px) {
-    .decor--3 {
+    .triggers__decor {
         top: -25px;
     }
 }

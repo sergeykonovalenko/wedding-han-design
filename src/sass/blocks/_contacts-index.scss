@@ -1,0 +1,95 @@
+.contacts-index {
+    padding-top: 155px;
+    padding-bottom: 185px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body:not(.is-mobile) .contacts-index {
+    background-attachment: fixed;
+}
+
+.no-js .contacts-index,
+.no-webp .contacts-index {
+    background-image: url("img/bg/contacts-index.jpg");
+}
+
+.webp .contacts-index {
+    background-image: url("img/bg/contacts-index.webp");
+}
+
+.contacts-index__box {
+    position: relative;
+    margin-left: 21px;
+}
+
+.contacts-index__list {
+    @include reset-list;
+    position: absolute;
+    right: 0;
+    bottom: 27px;
+    left: 175px;
+    width: 250px;
+}
+
+.contacts-index__list li {
+
+}
+
+.contacts-index__list a {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 0.8889em;
+    color: #151414;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contacts-index__list a:hover,
+.contacts-index__list a:focus {
+    text-decoration: none;
+    color: #9d824f;
+}
+
+.contacts-index__list a::before {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+/////
+.no-js .contacts-index__list li:nth-child(1) a::before,
+.no-webp .order {
+    background-image: url("img/base/contact-marker-icon.png");
+}
+
+.webp .contacts-index__list li:nth-child(1) a::before {
+    background-image: url("img/base/contact-marker-icon.webp");
+}
+
+/////
+.no-js .contacts-index__list li:nth-child(2) a::before,
+.no-webp .order {
+    background-image: url("img/base/contact-email-icon.png");
+}
+
+.webp .contacts-index__list li:nth-child(2) a::before {
+    background-image: url("img/base/contact-email-icon.webp");
+}
+
+/////
+.no-js .contacts-index__list li:nth-child(3) a::before,
+.no-webp .order {
+    background-image: url("img/base/contact-phone-icon.png");
+}
+
+.webp .contacts-index__list li:nth-child(3) a::before {
+    background-image: url("img/base/contact-phone-icon.webp");
+}

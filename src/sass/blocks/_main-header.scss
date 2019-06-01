@@ -108,12 +108,24 @@
     background-size: contain;
 }
 
-.main-header__contacts li:nth-child(1) a::before {
+/////
+.no-js .main-header__contacts li:nth-child(1) a::before,
+.no-webp .order {
     background-image: url("img/base/contact-phone-icon.png");
 }
 
-.main-header__contacts li:nth-child(2) a::before {
+.webp .main-header__contacts li:nth-child(1) a::before {
+    background-image: url("img/base/contact-phone-icon.webp");
+}
+
+/////
+.no-js .main-header__contacts li:nth-child(2) a::before,
+.no-webp .order {
     background-image: url("img/base/contact-email-icon.png");
+}
+
+.webp .main-header__contacts li:nth-child(2) a::before {
+    background-image: url("img/base/contact-email-icon.webp");
 }
 
 .main-header__contacts a:hover,

@@ -25,10 +25,15 @@ picture {
 }
 
 input,
-select {
+select,
+textarea {
     display: block;
     width: 100%;
     padding: 0;
-    color: #424242;
+    color: #151414;
     outline: none;
+}
+
+input.error {
+    border-color: #fb5258;
 }

@@ -141,10 +141,10 @@
             <div class="offer-slider__item"></div>
             <div class="offer-slider__item"></div>
         </div>
-        <div class="decor decor--1">
+        <div class="offer-home__decor-1 decor">
             <div class="decor__element decor__element--1" data-depth="0.3"></div>
         </div>
-        <div class="decor decor--2">
+        <div class="offer-home__decor-2 decor">
             <div class="decor__element decor__element--2" data-depth="0.3"></div>
         </div>
     </section>
@@ -198,13 +198,74 @@
                     </div>
                 </div>
             </div>
-            <div class="decor decor--3">
+            <div class="triggers__decor decor">
                 <div class="decor__element decor__element--3" data-depth="0.3"></div>
             </div>
         </section>
     </div>
 
-    
+    <section class="order">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="order__wrapper">
+                        <div class="order__box">
+                            <h2 class="order__title">Get in touch</h2>
+                            <form class="order__form js-form" action="#" method="POST">
+                                <ul class="order__list">
+                                    <li class="order__item">
+                                        <label class="order__label" for="order-name">Name</label>
+                                        <input class="order__field" id="order-name" name="name" type="text" required>
+                                    </li>
+                                    <li class="order__item">
+                                        <label class="order__label" for="order-email">Email</label>
+                                        <input class="order__field" id="order-email" name="email" type="email" required>
+                                    </li>
+                                    <li class="order__item">
+                                        <label class="order__label" for="order-phone">Phone number</label>
+                                        <input class="order__field" id="order-phone" name="phone" type="tel" required>
+                                    </li>
+                                    <li class="order__item">
+                                        <label class="order__label" for="order-message">Your Message...</label>
+                                        <textarea class="order__field order__field--textarea" id="order-message" name="message" type="text"></textarea>
+                                    </li>
+                                </ul>
+                                <button class="order__button" data-submit>
+                                    Send
+                                    <span class="order__decor-1 decor">
+                                    <span class="decor__element decor__element--4" data-depth="0.3"></span>
+                                </span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="order__decor-2 decor">
+                            <div class="decor__element decor__element--5" data-depth="0.3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts-index">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="contacts-index__box">
+                        <ul class="contacts-index__list">
+                            <li><a class="shake" href="#">139a London Road.<br> Shardlow. Derby. DE72 2HA</a></li>
+                            <li><a class="shake" href="mailto:lana.nocon@gmail.com">Lana.nocon@gmail.com</a></li>
+                            <li><a class="shake" href="tel:08000850585">0800 085 0585</a></li>
+                        </ul>
+                        <picture class="contacts-index__envelope">
+                            <source type="image/webp" srcset="img/base/envelope.png">
+                            <img src="img/base/envelope.webp" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>

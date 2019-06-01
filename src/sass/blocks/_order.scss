@@ -1,0 +1,110 @@
+.order {
+    padding: 60px 0;
+    background-color: #e9ebe9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-js .order,
+.no-webp .order {
+    background-image: url("img/bg/order.jpg");
+}
+
+.webp .order {
+    background-image: url("img/bg/order.webp");
+}
+
+.order__wrapper {
+    position: relative;
+}
+
+.order__box {
+    position: relative;
+    z-index: 2;
+    width: 730px;
+    margin-left: auto;
+    padding: 40px 55px 55px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(0deg, rgba(225, 202, 200, 0.75) 0%, rgba(255, 255, 255, 0.75) 99%, rgba(255, 255, 255, 0.75) 100%);
+    border-image-slice: 1;
+}
+
+.order__title {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1em;
+    font-family: "Great Vibes", "Times New Roman", serif;
+    text-align: center;
+    color: #5c5c57;
+}
+
+.order__form {
+    width: 470px;
+    margin: 0 auto;
+}
+
+.order__list {
+    @include reset-list;
+    margin-bottom: 33px;
+}
+
+.order__item {
+    position: relative;
+}
+
+.order__label {
+    margin-bottom: 6px;
+    font-size: 18px;
+    line-height: 1;
+    vertical-align: bottom;
+    color: #151414;
+    cursor: pointer;
+}
+
+.order__field {
+    height: 47px;
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 1.25em;
+    border: 2px solid #f4e2d3;
+    border-radius: 5px;
+}
+
+.order__field--textarea {
+    height: 100px;
+    padding-top: 5px;
+    resize: none;
+}
+
+.order__button {
+    position: relative;
+    min-width: 250px;
+    padding: 8px 15px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #a2ac9a;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.order__button:hover,
+.order__button:focus {
+    background-color: #848d7c;
+    outline: none;
+}
+
+.order__decor-1 {
+    right: -30px;
+    bottom: -26px;
+}
+
+.order__decor-2  {
+    z-index: 1;
+    right: -156px;
+    bottom: -99px;
+}
