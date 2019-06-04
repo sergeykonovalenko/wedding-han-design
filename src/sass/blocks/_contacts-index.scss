@@ -1,4 +1,5 @@
 .contacts-index {
+    position: relative;
     padding-top: 155px;
     padding-bottom: 185px;
     background-repeat: no-repeat;
@@ -92,4 +93,9 @@ body:not(.is-mobile) .contacts-index {
 
 .webp .contacts-index__list li:nth-child(3) a::before {
     background-image: url("img/base/contact-phone-icon.webp");
+}
+
+.contacts-index__decor {
+    top: 50px;
+    left: -230px;
 }

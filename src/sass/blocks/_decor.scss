@@ -36,6 +36,16 @@
     height: 263px;
 }
 
+.decor__element--6 {
+    width: 509px;
+    height: 670px;
+}
+
+.decor__element--7 {
+    width: 509px;
+    height: 670px;
+}
+
 // decor 1
 .no-js .decor__element--1,
 .no-webp .decor__element--1 {
@@ -84,4 +94,24 @@
 
 .webp .decor__element--5 {
     background-image: url("img/base/order-decor-2.webp");
+}
+
+// decor 6
+.no-js .decor__element--6,
+.no-webp .decor__element--6 {
+    background-image: url("img/base/contacts-index-decor.png");
+}
+
+.webp .decor__element--6 {
+    background-image: url("img/base/contacts-index-decor.webp");
+}
+
+// decor 7
+.no-js .decor__element--7,
+.no-webp .decor__element--7 {
+    background-image: url("img/base/main-footer-decor.png");
+}
+
+.webp .decor__element--7 {
+    background-image: url("img/base/main-footer-decor.webp");
 }
