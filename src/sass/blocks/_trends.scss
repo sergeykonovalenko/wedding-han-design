@@ -1,0 +1,36 @@
+.trends {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 190px;
+    background-repeat: no-repeat;
+    background-position: calc(50% + 565px) 36vh;
+    overflow: hidden;
+}
+
+body:not(.is-mobile) .trends {
+    background-attachment: fixed;
+}
+
+.no-js .trends,
+.no-webp .trends {
+    background-image: url("img/bg/trends.png");
+}
+
+.webp .trends {
+    background-image: url("img/bg/trends.webp");
+}
+
+.trends__page-size {
+    margin-left: auto;
+    margin-bottom: 34px;
+}
+
+.trends__decor-1 {
+    top: 310px;
+    left: -170px;
+}
+
+.trends__decor-3 {
+    top: 1700px;
+    left: -36px;
+}

@@ -25,13 +25,13 @@
     color: #9d824f;
     cursor: pointer;
     transition: all 0.3s ease;
-}
 
-.top-nav__item > a:hover,
-.top-nav__item > a:focus {
-    text-decoration: none;
-    color: #fff;
-    background-color: #8a9b7c;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+        background-color: #8a9b7c;
+    }
 }
 
 .top-nav__item--sale a {
@@ -40,11 +40,11 @@
     font-size: 20px;
     color: #fff;
     background-color: #d0aeaa;
-}
 
-.top-nav__item--sale a:hover,
-.top-nav__item--sale a:focus {
-    background-color: #bb9b97;
+    &:hover,
+    &:focus {
+        background-color: #bb9b97;
+    }
 }
 
 .top-nav__item--sale a span {

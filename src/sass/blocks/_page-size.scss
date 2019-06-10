@@ -1,0 +1,27 @@
+.page-size {
+    position: relative;
+    width: 240px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 17px;
+        height: 10px;
+        background: url("img/base/arrow-down.svg") no-repeat 0 0;
+        background-size: contain;
+        pointer-events: none;
+    }
+}
+
+.page-size__select {
+    padding: 0 25px 6px 15px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    transition: all 0.3s ease;
+}

@@ -7,7 +7,6 @@ body {
     color: #151414;
     word-wrap: break-word;
     background-color: #fff;
-    overflow-x: hidden;
 }
 
 a {
@@ -32,8 +31,4 @@ textarea {
     padding: 0;
     color: #151414;
     outline: none;
-}
-
-input.error {
-    border-color: #fb5258;
 }

@@ -1,0 +1,13 @@
+.trends-products {
+    margin-bottom: 110px;
+}
+
+.trends-products__list {
+    margin: 0 0 55px 0;
+}
+
+@media (min-width: 1431px) {
+    .trends-products .container {
+        max-width: 1371px;
+    }
+}

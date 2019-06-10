@@ -46,6 +46,15 @@
     height: 670px;
 }
 
+.decor__element--8 {
+    width: 336px;
+    height: 690px;
+}
+
+.decor__element--10 {
+    width: 217px;
+    height: 250px;
+}
 // decor 1
 .no-js .decor__element--1,
 .no-webp .decor__element--1 {
@@ -114,4 +123,24 @@
 
 .webp .decor__element--7 {
     background-image: url("img/base/main-footer-decor.webp");
+}
+
+// decor 8
+.no-js .decor__element--8,
+.no-webp .decor__element--8 {
+    background-image: url("img/base/trends-decor-1.png");
+}
+
+.webp .decor__element--8 {
+    background-image: url("img/base/trends-decor-1.webp");
+}
+
+// decor 10
+.no-js .decor__element--10,
+.no-webp .decor__element--10 {
+    background-image: url("img/base/trends-decor-3.png");
+}
+
+.webp .decor__element--10 {
+    background-image: url("img/base/trends-decor-3.webp");
 }

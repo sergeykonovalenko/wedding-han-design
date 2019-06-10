@@ -1,0 +1,47 @@
+.offer-internal {
+    position: relative;
+    padding: 45px 0;
+}
+
+.offer-internal__text {
+    padding: 30px 35px 54px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.offer-internal__text h1 {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 60px;
+    font-family: "Great Vibes", "Times New Roman", serif;
+    text-align: center;
+    color: #5c5c57;
+}
+
+.offer-internal__text p {
+    margin: 16px 0;
+    line-height: 1.25em;
+}
+
+.offer-internal__text *:first-child {
+    margin-top: 0;
+}
+
+.offer-internal__text *:last-child {
+    margin-bottom: 0;
+}
+
+.offer-internal__decor-1 {
+    top: -115px;
+    left: -75px;
+}
+
+.offer-internal__decor-2 {
+    right: -230px;
+    bottom: -310px;
+}
+
+@media screen and (max-width: 1650px) {
+    .offer-internal__decor-1 {
+        left: -135px;
+    }
+}

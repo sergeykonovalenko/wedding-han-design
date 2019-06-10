@@ -1,3 +1,7 @@
+input.error {
+    border-color: #fb5258 !important;
+}
+
 label.error {
     position: absolute;
     top: 100%;
@@ -9,4 +13,9 @@ label.error {
     line-height: 1;
     text-align: right;
     color: #fb5258;
+}
+
+input.error:focus,
+textarea.error:focus {
+    box-shadow: 0 0 10px 2px rgba(251, 82, 88, 0.5) !important;
 }

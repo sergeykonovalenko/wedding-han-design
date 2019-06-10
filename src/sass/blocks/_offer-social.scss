@@ -24,8 +24,8 @@
     background-color: rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
-}
 
-.offer-social__link:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 }
