@@ -1,0 +1,67 @@
+.nice-number {
+    position: relative;
+    overflow: hidden;
+
+    &:hover button,
+    &:focus-within button {
+        visibility: visible;
+        opacity: 0.5;
+    }
+
+    &:hover button:first-of-type {
+        left: 0;
+    }
+
+    &:hover button:last-of-type {
+        right: 0;
+    }
+}
+
+.nice-number input {
+    padding: 0 23px;
+    font-size: 30px;
+    color: #a2ac9a;
+    border: 1px solid #a2ac9a;
+    border-radius: 10px;
+}
+
+.nice-number button {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23px;
+    height: 100%;
+    padding: 0;
+    font-size: 45px;
+    line-height: 0;
+    color: #a2ac9a;
+    background-color: transparent;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .15s ease-in,
+                right .15s ease-in,
+                left .15s ease-in;
+
+    &:first-of-type {
+        left: -23px;
+        padding-left: 3px;
+    }
+
+    &:last-of-type {
+        right: -23px;
+        padding-right: 3px;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,29 @@
+.breadcrumbs {
+    padding: 25px 0;
+    font-size: 18px;
+    background-color: #fcf6f2;
+}
+
+.breadcrumbs__link {
+    margin-right: 8px;
+    color: #515151;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #9d824f;
+    }
+}
+
+.breadcrumbs__separator {
+    margin-right: 8px;
+    font-size: 37px;
+    line-height: 0;
+    vertical-align: middle;
+    color: #b2b2b2;
+}
+
+.breadcrumbs__current {
+    color: #a2ac9a;
+}

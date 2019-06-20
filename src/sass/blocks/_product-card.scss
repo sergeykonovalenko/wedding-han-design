@@ -1,0 +1,125 @@
+.product-card {
+    position: relative;
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 33px;
+}
+
+.product-card__left {
+
+}
+
+.product-card__right {
+
+}
+
+.product-card__description {
+    margin-bottom: 24px;
+}
+
+.product-card__description h1 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Coves", Tahoma, sans-serif;
+    text-align: left;
+    color: #8a9b7c;
+}
+
+.product-card__description p,
+.product-card__description ul {
+    margin: 16px 0;
+    line-height: 1.416667em;
+}
+
+.product-card__description *:first-child {
+    margin-top: 0;
+}
+
+.product-card__description *:last-child {
+    margin-bottom: 0;
+}
+
+.product-card__foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-card__features {
+    width: 410px;
+    line-height: 1.25em;
+}
+
+.product-card__features ul {
+    @include reset-list;
+}
+
+.product-card__features li {
+    margin-bottom: 4px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.product-card__features strong {
+    font-weight: 700;
+}
+
+.product-card__actions-box {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+}
+
+.product-card__price {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: right;
+    color: #d0aeaa;
+}
+
+.product-card__actions {
+    display: flex;
+    margin-top: auto;
+}
+
+.product-card__quantity {
+    position: relative;
+    display: flex;
+    width: 80px;
+    margin-right: 7px;
+    margin-bottom: 0;
+}
+
+.product-card__quantity label {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 2px;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    color: #a2ac9a;
+}
+
+.product-card__button {
+    min-width: 250px;
+}
+
+.product-card__decor-1 {
+    top: -180px;
+    left: -75px;
+}
+
+.product-card__decor-2 {
+    right: -230px;
+    bottom: -20px;
+}
+
+@media screen and (max-width: 1650px) {
+    .product-card__decor-1 {
+        left: -135px;
+    }
+}

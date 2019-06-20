@@ -1,0 +1,14 @@
+.similar-products {
+    position: relative;
+}
+
+.similar-products__decor {
+    top: -35px;
+    left: -165px;
+}
+
+@media screen and (max-width: 1650px) {
+    .similar-products__decor {
+        left: -210px;
+    }
+}

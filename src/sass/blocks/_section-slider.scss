@@ -1,0 +1,14 @@
+.section-slider {
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.section-slider__title {
+    margin-bottom: 12px;
+}
+
+@media (min-width: 1431px) {
+    .section-slider .container {
+        max-width: 1388px;
+    }
+}

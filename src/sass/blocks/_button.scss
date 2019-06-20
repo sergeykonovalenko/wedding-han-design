@@ -1,9 +1,25 @@
 .button {
+    position: relative;
     display: inline-block;
+    padding: 8px 15px;
+    font-size: 30px;
     user-select: none;
     vertical-align: middle;
     text-align: center;
     white-space: normal;
     word-wrap: normal;
+    color: #fff;
+    background-color: #a2ac9a;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+        background-color: #bec5b8;
+        outline: none;
+    }
 }

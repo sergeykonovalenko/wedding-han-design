@@ -1,4 +1,6 @@
 .offer-slider {
+    @include slider-fix(100%);
+
     position: absolute;
     top: 0;
     right: 0;

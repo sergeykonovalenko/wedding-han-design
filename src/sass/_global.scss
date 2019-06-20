@@ -9,8 +9,29 @@ body {
     background-color: #fff;
 }
 
+h1  {
+    font-size: 100px;
+}
+
+h2  {
+    font-size: 60px;
+    line-height: 1;
+}
+
+h3 {
+    line-height: 1;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    font-family: "Great Vibes", "Times New Roman", serif;
+    text-align: center;
+    color: #5c5c57;
+}
+
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 img {

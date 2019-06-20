@@ -1,0 +1,48 @@
+.product-slider {
+
+}
+
+.product-slider__item {
+    padding: 30px 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.product-slider__card {
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(83, 80, 80, 0.29);
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.product-slider__arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .15s ease-in;
+    transform: translate(0, -50%);
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.product-slider__arrow_prev {
+    left: -67px;
+}
+
+.product-slider__arrow_next {
+    right: -67px;
+}

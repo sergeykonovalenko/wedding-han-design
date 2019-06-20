@@ -1,7 +1,7 @@
 .trends {
     position: relative;
-    padding-top: 44px;
-    padding-bottom: 190px;
+    padding-top: 140px;
+    padding-bottom: 145px;
     background-repeat: no-repeat;
     background-position: calc(50% + 565px) 36vh;
     overflow: hidden;
@@ -20,17 +20,41 @@ body:not(.is-mobile) .trends {
     background-image: url("img/bg/trends.webp");
 }
 
+.trends__nav {
+    margin: 0 auto 80px;
+}
+
+.trends__title {
+    max-width: 1170px;
+    margin: 0 auto 10px;
+}
+
 .trends__page-size {
     margin-left: auto;
-    margin-bottom: 34px;
+    margin-bottom: 23px;
 }
 
 .trends__decor-1 {
-    top: 310px;
+    top: 250px;
     left: -170px;
 }
 
+.trends__decor-2 {
+    top: 1450px;
+    right: -220px;
+}
+
 .trends__decor-3 {
-    top: 1700px;
-    left: -36px;
+    top: 3095px;
+    left: -70px;
+}
+
+.trends__decor-4 {
+    top: 4050px;
+    left: -5px;
+}
+
+.trends__decor-5 {
+    top: 4230px;
+    right: -87px;
 }

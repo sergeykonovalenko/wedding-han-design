@@ -1,0 +1,63 @@
+.gallery-side {
+    @include slider-fix(370px);
+}
+
+.gallery-side__item {
+    padding: 21px 0;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.gallery-side__img {
+    width: 74px;
+    height: 74px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slick-current .gallery-side__img {
+    box-shadow: 0 0 0 3px #d0aeaa,
+                0 0 5px 3px rgb(191, 160, 156);
+    transform: scale(1.1);
+}
+
+.gallery-side__arrow {
+    position: absolute;
+    top: 21px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    padding: 0;
+    background-color: rgba(208, 174, 170, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 13px;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.gallery-side__arrow_prev {
+    display: none !important;
+}
+
+.gallery-side__arrow_next {
+    right: 0;
+}
+
+.gallery-side__arrow svg {
+    transition: all 0.3s ease;
+    opacity: 0.7;
+}
+
+.gallery-side__arrow:hover svg {
+    opacity: 1;
+}

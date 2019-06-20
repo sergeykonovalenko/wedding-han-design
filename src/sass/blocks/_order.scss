@@ -58,12 +58,6 @@
 
 .order__title {
     margin-bottom: 17px;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1em;
-    font-family: "Great Vibes", "Times New Roman", serif;
-    text-align: center;
-    color: #5c5c57;
 }
 
 .order__form {
@@ -159,23 +153,8 @@
 }
 
 .order__button {
-    position: relative;
     display: block;
     min-width: 250px;
-    padding: 8px 15px;
-    font-size: 30px;
-    color: #fff;
-    background-color: #a2ac9a;
-    border: none;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        background-color: #bec5b8;
-        outline: none;
-    }
 }
 
 .order--inner .order__button {

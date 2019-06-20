@@ -1,0 +1,15 @@
+.related-products {
+    background-color: #f7f3f0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-js .related-products,
+.no-webp .related-products {
+    background-image: url("img/bg/related-products.jpg");
+}
+
+.webp .related-products {
+    background-image: url("img/bg/related-products.webp");
+}

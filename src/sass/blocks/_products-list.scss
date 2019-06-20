@@ -1,0 +1,19 @@
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.products-list__item {
+    display: flex;
+    margin-right: 23px;
+
+    &:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(n + 5) {
+        margin-top: 23px;
+    }
+}

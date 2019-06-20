@@ -88,7 +88,7 @@
     align-items: center;
     font-size: 18px;
     color: #000;
-    transition: all 0.3s ease;
+    transition: all .15s ease-in;
     cursor: pointer;
 
     &:hover,
@@ -137,7 +137,7 @@
 .main-header__contacts-link {
     font-size: 18px;
     color: #000;
-    transition: all 0.3s ease;
+    transition: all .15s ease-in;
     cursor: pointer;
 
     &:hover,

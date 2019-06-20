@@ -33,8 +33,24 @@
 @import "blocks/offer-internal";
 @import "blocks/offer-wedding-trends";
 @import "blocks/trends";
+@import "blocks/extra-menu";
 @import "blocks/trends-products";
-@import "blocks/products";
+@import "blocks/products-list";
+@import "blocks/product-item";
 @import "blocks/page-size";
 @import "blocks/wp-pagenavi";
 @import "blocks/trends-text";
+/* ==========================================================================
+   PRODUCT PAGE
+   ========================================================================== */
+@import "blocks/product-card";
+@import "blocks/breadcrumbs";
+@import "blocks/nice-number";
+@import "blocks/gallery";
+@import "blocks/gallery-side";
+@import "blocks/similar-products";
+@import "blocks/section-slider";
+@import "blocks/product-slider";
+@import "blocks/related-products";
+@import "blocks/triggers-product";
+@import "blocks/contacts-product";

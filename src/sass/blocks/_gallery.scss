@@ -1,0 +1,22 @@
+.gallery {
+    @include slider-fix(370px);
+
+    margin-top: 6px;
+}
+
+.gallery__item {
+    &:focus {
+        outline: none;
+    }
+}
+
+.gallery__link {
+    display: block;
+    cursor: pointer;
+}
+
+.gallery__img {
+    width: 370px;
+    height: 370px;
+    border-radius: 15px;
+}

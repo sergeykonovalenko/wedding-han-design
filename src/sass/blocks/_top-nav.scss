@@ -24,7 +24,7 @@
     text-transform: uppercase;
     color: #9d824f;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all .15s ease-in;
 
     &:hover,
     &:focus {
@@ -32,6 +32,12 @@
         color: #fff;
         background-color: #8a9b7c;
     }
+}
+
+.top-nav__item.current-menu-item a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #8a9b7c;
 }
 
 .top-nav__item--sale a {
