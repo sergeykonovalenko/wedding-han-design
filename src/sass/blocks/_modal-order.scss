@@ -1,0 +1,52 @@
+.modal-order {
+    padding: 0;
+    background-color: transparent;
+
+    .no-js &,
+    .no-webp &,
+    .webp & {
+        background-image: none;
+    }
+}
+
+.modal-order .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-order__close {
+    top: -10px;
+    right: -55px;
+}
+
+.modal-order .order__box {
+    background-color: rgba(255, 255, 255, .90);
+}
+
+.modal-order .order__decor-1 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .modal-order .modal-dialog {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .modal-order .modal-dialog {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-order .modal-dialog {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1260px) {
+    .modal-order .modal-dialog {
+        max-width: 1200px;
+    }
+}

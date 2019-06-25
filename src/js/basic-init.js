@@ -104,6 +104,31 @@ $(document).ready(function () {
         buttonPosition: 'right'
     });
 
+    /*
+    * Substitution of the name and quantity of the product in the form fields
+    */
+    $('.product-card__button').on('click', function () {
+        let productName = $('.product-card__description h1').text() || '';
+        let quantity = $('#quantity').val();
+
+        $('.js-product-name').val(productName);
+        $('.js-quantity').val(quantity);
+    });
+
+    // install and remove focus
+    let modalOrder = $('.modal-order');
+
+    modalOrder.on('hidden.bs.modal', function (e) {
+        setTimeout(function () {
+            $('.product-card__button').blur();
+        }, 10);
+    });
+
+    modalOrder.on('shown.bs.modal', function () {
+        $('#order-name').focus();
+    });
+
+
     ////////////////////////////////////////////////////////////////////////////
     // FORM PROCESSING
 
