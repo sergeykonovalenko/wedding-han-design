@@ -1,4 +1,5 @@
 .product-item {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 318px;
@@ -7,7 +8,6 @@
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 5px 20px 1px rgba(83, 80, 80, 0.29);
-    transition: color .15s ease-in;
     cursor: pointer;
 
     &:hover .product-item__img,
@@ -23,8 +23,8 @@
         color: #8a9b7c;
     }
 
-    &:hover .product-item__info::after,
-    &:focus .product-item__info::after {
+    &:hover .product-item__name::after,
+    &:focus .product-item__name::after {
         background-color: #aabe98;
     }
 }
@@ -48,17 +48,23 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    padding: 32px 15px 20px;
+    padding: 10px 15px 15px;
 }
 
-.product-item__info {
+.product-item__name {
     position: relative;
-    order: 1;
     margin-bottom: 6px;
     padding-bottom: 12px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25em;
+    font-family: "Coves", Tahoma, sans-serif;
+    color: #303030;
+    transition: all .15s ease-in;
+
+    &--sale {
+        margin-bottom: 16px;
+    }
 
     &::after {
         content: "";
@@ -73,19 +79,54 @@
     }
 }
 
-.product-item__name {
-    order: 2;
-    margin-bottom: 9px;
+.product-item__info {
+    margin-bottom: 5px;
     font-size: 20px;
     line-height: 1.2em;
-    font-family: "Coves", Tahoma, sans-serif;
-    color: #303030;
+    transition: all .15s ease-in;
 }
 
 .product-item__price {
-    order: 3;
     margin-top: auto;
     margin-bottom: 0;
     font-weight: 700;
     color: #be6461;
 }
+
+.product-item__price-new {
+    display: block;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.product-item__price-old {
+    font-size: 20px;
+    color: #f50b0b;
+}
+
+.product-item__label {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+    min-width: 140px;
+    margin: 0;
+    padding: 0 15px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+
+    &--main {
+        background-color: rgba(215, 3, 15, .88);
+        box-shadow: 4px 4px 24px rgba(165, 19, 21, .7);
+    }
+
+    &--extra {
+        background-color: rgba(63, 62, 62, .88);
+        box-shadow: 4px 4px 24px rgba(40, 38, 38, .7);
+    }
+}
+
+

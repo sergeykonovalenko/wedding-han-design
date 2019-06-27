@@ -8,6 +8,7 @@
 
 .triggers__list {
     @include reset-list;
+
     display: flex;
     flex-wrap: wrap;
 }
@@ -21,7 +22,7 @@
     min-height: 246px;
     margin-right: 10px;
     padding: 50px 19px 52px 19px;
-    background-color: #fef7f5;
+    background-color: #fbfcfb;
     background-repeat: no-repeat;
     background-position: top left, right bottom;
 
@@ -76,10 +77,6 @@
         border-image: linear-gradient(45deg, rgba(151,109,51,1) 0%, rgba(248,230,180,1) 50%, rgba(151,109,51,1) 100%) 1;
         pointer-events: none;
     }
-}
-
-.triggers--extra .triggers__item {
-    background-color: #fbfcfb;
 }
 
 .no-js .triggers__item

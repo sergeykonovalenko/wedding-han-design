@@ -1,5 +1,6 @@
 .offer-social {
     @include reset-list;
+
     position: absolute;
     top: 50%;
     left: 0;
@@ -27,5 +28,11 @@
 
     &:hover {
         background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .offer-social {
+        display: none;
     }
 }

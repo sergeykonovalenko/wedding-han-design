@@ -1,0 +1,37 @@
+.social-top-nav {
+    @include reset-list;
+
+    display: flex;
+}
+
+.social-top-nav__item {
+    &:first-child {
+        padding-left: 25px;
+    }
+
+    padding: 15px;
+}
+
+.social-top-nav__link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    opacity: .7;
+    transition: all .15s ease-in;
+    
+    &--facebook {
+        background-image: url("img/bg/social-facebook.svg");
+    }
+    
+    &--instagram {
+        background-image: url("img/bg/social-instagram.svg");
+    }
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}

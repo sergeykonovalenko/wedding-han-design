@@ -1,0 +1,18 @@
+.main-products {
+    margin-bottom: 130px;
+}
+
+.main-products .container {
+    position: relative;
+    z-index: 2;
+}
+
+.main-products__list {
+    margin: 0 0 70px 0;
+}
+
+@media (min-width: 1431px) {
+    .main-products .container {
+        max-width: 1371px;
+    }
+}

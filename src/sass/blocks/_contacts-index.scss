@@ -6,10 +6,6 @@
     background-position: center;
 }
 
-body:not(.is-mobile) .contacts-index {
-    background-attachment: fixed;
-}
-
 .no-js .contacts-index,
 .no-webp .contacts-index {
     background-image: url("img/bg/contacts-index.jpg");
@@ -26,6 +22,7 @@ body:not(.is-mobile) .contacts-index {
 
 .contacts-index__list {
     @include reset-list;
+
     position: absolute;
     right: 0;
     bottom: 27px;

@@ -20,6 +20,7 @@
 
 .main-header__extra-nav {
     @include reset-list;
+
     display: flex;
     align-items: center;
 }
@@ -70,6 +71,7 @@
 
 .main-header__contacts {
     @include reset-list;
+
     display: flex;
     margin-left: auto;
     margin-right: 47px;
@@ -89,7 +91,6 @@
     font-size: 18px;
     color: #000;
     transition: all .15s ease-in;
-    cursor: pointer;
 
     &:hover,
     &:focus {
@@ -114,7 +115,6 @@
     font-size: 14px;
 }
 
-/////
 .no-js .main-header__contacts li:nth-child(1) a::before,
 .no-webp .order {
     background-image: url("img/base/contact-phone-icon.png");
@@ -124,7 +124,6 @@
     background-image: url("img/base/contact-phone-icon.webp");
 }
 
-/////
 .no-js .main-header__contacts li:nth-child(2) a::before,
 .no-webp .order {
     background-image: url("img/base/contact-email-icon.png");
@@ -156,8 +155,10 @@
     margin: -74px auto 25px;
 }
 
-.main-header__logo[href] {
-    cursor: pointer;
+@media (min-width: 576px) {
+    .mobile-header .container {
+        max-width: 100%;
+    }
 }
 
 @media (min-width: 1360px) {
@@ -166,18 +167,74 @@
     }
 }
 
-@media (min-width: 1260px) {
-
-}
-
-@media screen and (max-width: 1850px) {
-    .main-header {
-        background-position: top right;
-    }
-}
-
 @media screen and (max-width: 1850px) {
     .main-header {
         background-position: calc(100% + 200px) 0;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .main-header {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+
+    .main-header__top {
+        padding-top: 40px;
+    }
+
+    .main-header__top .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-header__top .row {
+        &:last-child {
+            order: 1;
+        }
+
+        &:first-child {
+            order: 2;
+        }
+    }
+
+    .main-header__top .row:first-child .col-6 {
+        &:first-child {
+            display: none;
+        }
+
+        &:last-child {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .main-header__logo {
+        margin-top: 0;
+    }
+
+    .main-header__contacts-box {
+        display: block;
+    }
+
+    .main-header__contacts {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .main-header__contacts-link {
+        display: none;
+    }
+
+    .main-header .main-header__search {
+        order: 1;
+        flex-grow: 1;
+        width: 365px;
+        margin: 0 auto;
+    }
+
+    .main-header__contacts-box {
+        order: 2;
+        margin-left: auto;
     }
 }

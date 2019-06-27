@@ -39,7 +39,7 @@
     z-index: 2;
     width: 730px;
     margin-left: auto;
-    padding: 40px 55px 55px;
+    padding: 45px 55px 45px;
     background-color: rgba(255, 255, 255, 0.75);
     border-width: 10px;
     border-style: solid;
@@ -57,7 +57,33 @@
 }
 
 .order__title {
-    margin-bottom: 17px;
+    margin-bottom: 39px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.order__title p {
+    margin: 0;
+}
+
+.order__title p:first-child {
+    margin-bottom: 8px;
+    font-size: 60px;
+    line-height: 1;
+    font-family: "Great Vibes", "Times New Roman", serif;
+    color: #5c5c57;
+}
+
+.order__title p:first-child strong {
+    font-weight: 400;
+}
+
+.order__title *:first-child {
+    margin-top: 0;
+}
+
+.order__title *:last-child {
+    margin-bottom: 0;
 }
 
 .order__form {
@@ -76,6 +102,7 @@
 
 .order__list {
     @include reset-list;
+
     margin-bottom: 33px;
 }
 

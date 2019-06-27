@@ -14,8 +14,11 @@
    HOME PAGE
    ========================================================================== */
 @import "blocks/main-header";
+@import "blocks/mobile-header";
 @import "blocks/search";
 @import "blocks/top-nav";
+@import "blocks/social-top-nav";
+@import "blocks/social-top-nav";
 @import "blocks/offer-home";
 @import "blocks/offer-social";
 @import "blocks/offer-slider";
@@ -32,14 +35,14 @@
    ========================================================================== */
 @import "blocks/offer-internal";
 @import "blocks/offer-wedding-trends";
-@import "blocks/trends";
+@import "blocks/main";
 @import "blocks/extra-menu";
-@import "blocks/trends-products";
+@import "blocks/main-products";
 @import "blocks/products-list";
 @import "blocks/product-item";
-@import "blocks/page-size";
+@import "blocks/page-info";
 @import "blocks/wp-pagenavi";
-@import "blocks/trends-text";
+@import "blocks/main-text";
 /* ==========================================================================
    PRODUCT PAGE
    ========================================================================== */
@@ -58,3 +61,9 @@
    ========================================================================== */
 @import "blocks/modal-order";
 @import "blocks/modal-close";
+/* ==========================================================================
+   SALE
+   ========================================================================== */
+@import "blocks/offer-sale";
+@import "blocks/main-sale";
+@import "blocks/main-text-sale";

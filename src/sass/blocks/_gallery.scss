@@ -12,11 +12,24 @@
 
 .gallery__link {
     display: block;
+    width: 370px;
+    height: 370px;
+    border-radius: 15px;
     cursor: pointer;
+    overflow: hidden;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .gallery__img {
     width: 370px;
     height: 370px;
     border-radius: 15px;
+    transition: transform .3s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }

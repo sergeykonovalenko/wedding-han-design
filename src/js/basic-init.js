@@ -15,6 +15,54 @@ $(document).ready(function () {
         });
     }
 
+    // mobile menu
+    if (window.innerWidth < 1360) {
+        $('#js-top-nav').mmenu({
+            wrappers: ["wordpress"],
+            extensions: [
+                'border-full',
+                'fx-menu-slide',
+                'fx-listitems-slide',
+                'multiline',
+                'pagedim-black',
+            ],
+            "counters": true,
+            "setSelected": {
+                "hover": true
+            },
+            navbar: {
+                title: ''
+            },
+            "navbars": [
+                {
+                    "position": "top",
+                    "type": "tabs",
+                    "content": [
+                        "<a href='#categories'>Categories</a>",
+                        "<a href='#service'>Our Service</a>"
+                    ]
+                },
+                {
+                    "position": "bottom",
+                    "content": [
+                        '<ul class="top-nav__social social-top-nav mm-tileview">' +
+                        '    <li class="social-top-nav__item">' +
+                        '        <a class="social-top-nav__link social-top-nav__link--facebook" href="#" title="Our Facebook group" target="_blank">' +
+                        '            <span class="visually-hidden">Our Facebook group</span>' +
+                        '         </a>' +
+                        '     </li>' +
+                        '    <li class="social-top-nav__item">' +
+                        '        <a class="social-top-nav__link social-top-nav__link--instagram" href="#" title="Our Instagram page" target="_blank">' +
+                        '            <span class="visually-hidden">Our Instagram page</span>' +
+                        '        </a>' +
+                        '    </li>' +
+                        '</ul><!-- / .social-top-nav -->'
+                    ]
+                }
+            ],
+        });
+    }
+
     // offer-slider
     $('.offer-slider').slick({
         dots: false,

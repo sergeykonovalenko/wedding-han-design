@@ -1,4 +1,4 @@
-.trends {
+.main {
     position: relative;
     padding-top: 140px;
     padding-bottom: 145px;
@@ -7,54 +7,59 @@
     overflow: hidden;
 }
 
-body:not(.is-mobile) .trends {
+body:not(.is-mobile) .main {
     background-attachment: fixed;
 }
 
-.no-js .trends,
-.no-webp .trends {
-    background-image: url("img/bg/trends.png");
+.no-js .main,
+.no-webp .main {
+    background-image: url("img/bg/rose.png");
 }
 
-.webp .trends {
-    background-image: url("img/bg/trends.webp");
+.webp .main {
+    background-image: url("img/bg/rose.webp");
 }
 
-.trends__nav {
+.main__nav {
     margin: 0 auto 80px;
 }
 
-.trends__title {
+.main__title {
     max-width: 1170px;
     margin: 0 auto 10px;
 }
 
-.trends__page-size {
-    margin-left: auto;
+.main__page-info {
     margin-bottom: 23px;
 }
 
-.trends__decor-1 {
+.main__decor-1 {
     top: 250px;
     left: -170px;
 }
 
-.trends__decor-2 {
-    top: 1450px;
-    right: -220px;
+.main__decor-2 {
+    top: 1360px;
+    right: -270px;
 }
 
-.trends__decor-3 {
+.main__decor-3 {
     top: 3095px;
     left: -70px;
 }
 
-.trends__decor-4 {
+.main__decor-4 {
     top: 4050px;
     left: -5px;
 }
 
-.trends__decor-5 {
+.main__decor-5 {
     top: 4230px;
-    right: -87px;
+    right: -95px;
+}
+
+@media screen and (max-width: 1920px) {
+    .main__decor-5 {
+        display: none;
+    }
 }

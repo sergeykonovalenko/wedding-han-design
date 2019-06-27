@@ -19,6 +19,14 @@
     }
 }
 
+.product-slider .product-item__label--main {
+    box-shadow: 4px 4px 13px rgba(165, 19, 21, 0.65);
+}
+
+.product-slider .product-item__label--extra {
+    box-shadow: 4px 4px 13px rgba(40, 38, 38, 0.65);
+}
+
 .product-slider__arrow {
     position: absolute;
     top: 50%;

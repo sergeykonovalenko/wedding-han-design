@@ -1,6 +1,18 @@
-.page-size {
+.page-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.page-info__current {
+    margin: 0;
+}
+
+.page-info__size {
     position: relative;
     width: 240px;
+    margin: 0;
 
     &::after {
         content: "";
@@ -15,7 +27,7 @@
     }
 }
 
-.page-size__select {
+.page-info__select {
     padding: 0 25px 6px 15px;
     font-weight: 700;
     font-size: 18px;

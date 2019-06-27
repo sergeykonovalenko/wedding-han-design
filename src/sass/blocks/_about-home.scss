@@ -2,9 +2,8 @@
     padding-bottom: 145px;
 }
 
-.about-home__text {
+.about-home__content {
     height: 100%;
-    padding-top: 4px;
     padding-left: 22px;
     border-left: 2px solid #d0d5cc;
 }
@@ -27,6 +26,18 @@
     margin-bottom: 0;
 }
 
-.about-home__img {
+.about-home__content picture {
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
 
+.about-home__img {
+    max-width: 570px;
+}
+
+@media screen and (max-width: 1260px) {
+    .about-home__img {
+        max-width: 450px;
+    }
 }

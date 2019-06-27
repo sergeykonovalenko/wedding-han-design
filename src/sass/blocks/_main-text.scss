@@ -1,0 +1,33 @@
+.main-text {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 125px;
+}
+
+.main-text__box {
+
+}
+
+.main-text__box h2,
+.main-text__box h3 {
+    margin-top: 50px;
+    margin-bottom: 13px;
+}
+
+.main-text__box h3 {
+    font-size: 50px;
+}
+
+.main-text__box p,
+.main-text__box ul {
+    margin: 16px 0;
+    line-height: 1.25em;
+}
+
+.main-text__box *:first-child {
+    margin-top: 0;
+}
+
+.main-text__box *:last-child {
+    margin-bottom: 0;
+}

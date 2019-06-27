@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Beautiful and stylish wedding accessories for every taste">
     <meta property="og:description" content="💕 Wedding accessories for wedding planning">
-    <meta property="og:image" content="http://www.site-name.com/img/og/poster-1200x630.png">
+    <meta property="og:image" content="/img/og/poster.png">
     <meta property="og:url" content="http://www.site-name.com/current-page">
     <meta property="og:site_name" content="Wedding HanDesign">
     <!-- Modernizr -->
@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -103,7 +104,7 @@
                                         <a href="#">Wedding accessories</a>
                                     </li>
                                     <li class="top-nav__item top-nav__item--sale">
-                                        <a href="#">Sale <span>%</span></a>
+                                        <a href="sale.html">Sale <span>%</span></a>
                                     </li>
                                 </ul>
                             </nav><!-- / .top-nav -->
@@ -138,13 +139,13 @@
             </div>
         </section><!-- / .offer-internal -->
 
-        <div class="trends">
-            <section class="trends-products">
+        <div class="main">
+            <section class="main-products">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <ul class="trends__nav extra-menu">
-                                <li class="current-menu-item"><a href="#">Wedding trends 2019</a></li>
+                            <ul class="main__nav extra-menu">
+                                <li class="current-menu-item"><a href="wedding-trends.html">Wedding trends 2019</a></li>
                                 <li><a href="#">Wedding invitation trends</a></li>
                                 <li><a href="#">Wedding decor trends</a></li>
                                 <li><a href="#">Wedding favour trends</a></li>
@@ -154,317 +155,332 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <h2 class="trends__title">Wedding trends 2019</h2>
-                            <p class="trends__page-size page-size">
-                                <label class="visually-hidden" for="page-size">Products per Page</label>
-                                <select class="page-size__select" id="page-size">
-                                    <option>24 Products per Page</option>
-                                    <option>48 Products per Page</option>
-                                    <option>96 Products per Page</option>
-                                </select>
-                            </p>
-                            <ul class="trends-products__list products-list">
+                            <h2 class="main__title">Wedding trends 2019</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="main__page-info page-info">
+                                <p class="page-info__current">Page 1 of 9</p>
+                                <p class="page-info__size">
+                                    <label class="visually-hidden" for="page-size">Products per Page</label>
+                                    <select class="page-info__select" id="page-size">
+                                        <option>24 Products per Page</option>
+                                        <option>48 Products per Page</option>
+                                        <option>96 Products per Page</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="main-products__list products-list">
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                                 <li class="products-list__item">
-                                    <a class="product-item" href="product-page.html">
+                                    <a class="product-item" href="product.html">
                                         <p class="product-item__img-box">
                                             <picture>
                                                 <source type="image/webp" srcset="img/base/product.webp">
-                                                <img class="product-item__img" src="img/base/product.jpg" width="318" href="332" alt="">
+                                                <img class="product-item__img" src="img/base/product.jpg" width="318" height="332" alt="">
                                             </picture>
                                         </p>
                                         <div class="product-item__text">
-                                            <h2 class="product-item__name">Gastebuch Hochzeit personalisiert Greenery</h2>
-                                            <p class="product-item__info">Wedding Trends Gold nr 1</p>
+                                            <h2 class="product-item__name">Wedding Trends Gold nr 1</h2>
+                                            <p class="product-item__info">Gastebuch Hochzeit personalisiert Greenery</p>
                                             <p class="product-item__price">5.00$</p>
                                         </div>
                                     </a><!-- / .product-item -->
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
                             <!--<div class="wp-pagenavi" role="navigation">
                                 <a class="first" href="#">1</a>
                                 <a class="previouspostslink" rel="prev" href="#"></a>
@@ -491,13 +507,13 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- / .trends-products -->
+            </section><!-- / .main-products -->
 
-            <section class="trends-text">
+            <section class="main-text">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="trends-text__box">
+                            <div class="main-text__box">
                                 <h2>Coral colours</h2>
                                 <p>
                                     Pantone has announced it's colour of 2019 is a bright,
@@ -529,9 +545,9 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- / .trends-text -->
+            </section><!-- / .main-text -->
 
-            <section class="triggers triggers--extra">
+            <section class="triggers">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -563,29 +579,32 @@
                 </div>
             </section><!-- / .triggers -->
 
-            <div class="trends__decor-1 decor">
+            <div class="main__decor-1 decor">
                 <div class="decor__element decor__element--8" data-depth="0.3"></div>
             </div><!-- / .decor -->
-            <div class="trends__decor-2 decor">
+            <div class="main__decor-2 decor">
                 <div class="decor__element decor__element--9" data-depth="0.3"></div>
             </div><!-- / .decor -->
-            <div class="trends__decor-3 decor">
+            <div class="main__decor-3 decor">
                 <div class="decor__element decor__element--10" data-depth="0.3"></div>
             </div><!-- / .decor -->
-            <div class="trends__decor-4 decor">
+            <div class="main__decor-4 decor">
                 <div class="decor__element decor__element--11" data-depth="0.3"></div>
             </div><!-- / .decor -->
-            <div class="trends__decor-5 decor">
+            <div class="main__decor-5 decor">
                 <div class="decor__element decor__element--12" data-depth="0.3"></div>
             </div><!-- / .decor -->
-        </div><!-- / .trends -->
+        </div><!-- / .main -->
 
         <section class="order order--inner">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="order__box">
-                            <h2 class="order__title">Get in touch</h2>
+                            <div class="order__title">
+                                <p><strong>Thank you for your interest!</strong></p>
+                                <p>Please fill in the form and we'll get back to you as soon as we can.</p>
+                            </div>
                             <form class="order__form js-form" action="#" method="POST">
                                 <div class="order__fields-box">
                                     <ul class="order__list">
@@ -604,7 +623,7 @@
                                     </ul>
                                     <p class="order__item order__item--textarea">
                                         <label class="order__label" for="order-message"><span>Your Message...</span></label>
-                                        <textarea class="order__field order__field--textarea" id="order-message" name="message" type="text"></textarea>
+                                        <textarea class="order__field order__field--textarea" id="order-message" name="message"></textarea>
                                     </p>
                                 </div>
                                 <button class="order__button button" data-submit>
@@ -680,6 +699,8 @@
     <script src="js/jquery.mb.browser.js"></script>
     <!-- jQuery Validate -->
     <script src="js/jquery.validate.min.js"></script>
+    <!-- Light-box -->
+    <script src="js/lightbox.min.js"></script>
     <!-- Basic Init -->
     <script src="js/basic-init.js"></script>
 </body>
