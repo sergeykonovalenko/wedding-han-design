@@ -34,17 +34,19 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-    opacity: .5;
-    transition: all .15s ease-in;
     transform: translate(0, -50%);
 
     &:focus {
         outline: none;
     }
 
-    &:hover {
-        opacity: 1;
+    &:hover svg {
+        fill: #898e82;
     }
+}
+
+.product-slider__arrow svg {
+    transition: all .15s ease-in;
 }
 
 .product-slider__arrow_prev {

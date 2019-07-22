@@ -57,13 +57,16 @@
 @import "blocks/related-products";
 @import "blocks/triggers-product";
 @import "blocks/contacts-product";
-/* Modal order
-   ========================================================================== */
-@import "blocks/modal-order";
-@import "blocks/modal-close";
 /* ==========================================================================
    SALE
    ========================================================================== */
 @import "blocks/offer-sale";
 @import "blocks/main-sale";
 @import "blocks/main-text-sale";
+/* Modal order
+   ========================================================================== */
+@import "blocks/modal-order";
+@import "blocks/modal-close";
+/* Modal thanks
+   ========================================================================== */
+@import "blocks/modal-thanks";

@@ -1,6 +1,8 @@
 $(document).ready(function () {
     'use strict';
 
+    $('#js-modal-thanks').modal('show');
+
     const is_mobile = isMobile();
 
     if (is_mobile) {
@@ -129,8 +131,8 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         focusOnSelect: true,
-        prevArrow: '<button class="product-slider__arrow product-slider__arrow_prev" type="button"><span class="visually-hidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.1 116" width="26" height="49" fill="#a2ac9a"><path d="M55.1 1.2C55.9.4 56.9 0 58 0c1.1 0 2.1.4 2.9 1.2 1.6 1.6 1.6 4.2 0 5.8l-51 51 51 51c1.6 1.6 1.6 4.2 0 5.8-1.6 1.6-4.2 1.6-5.8 0L1.2 60.9c-1.6-1.6-1.6-4.2 0-5.8L55.1 1.2z"/></svg></button>',
-        nextArrow: '<button class="product-slider__arrow product-slider__arrow_next" type="button"><span class="visually-hidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.3 512" width="26" height="49" fill="#a2ac9a"><path d="M6.3 36.4L225.8 256 6.3 475.6c-8.3 8.3-8.3 21.8 0 30.2 8.3 8.3 21.8 8.3 30.2 0l234.7-234.7c8.3-8.3 8.3-21.8 0-30.2L36.4 6.3C32.3 2.1 26.8 0 21.3 0c-5.4 0-10.9 2.1-15 6.3-8.4 8.3-8.4 21.8 0 30.1z"/></svg></button>',
+        prevArrow: '<button class="product-slider__arrow product-slider__arrow_prev" type="button"><span class="visually-hidden">Previous</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62.1 116" width="26" height="49" fill="#b1b4ad"><path d="M55.1 1.2C55.9.4 56.9 0 58 0c1.1 0 2.1.4 2.9 1.2 1.6 1.6 1.6 4.2 0 5.8l-51 51 51 51c1.6 1.6 1.6 4.2 0 5.8-1.6 1.6-4.2 1.6-5.8 0L1.2 60.9c-1.6-1.6-1.6-4.2 0-5.8L55.1 1.2z"/></svg></button>',
+        nextArrow: '<button class="product-slider__arrow product-slider__arrow_next" type="button"><span class="visually-hidden">Next</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277.3 512" width="26" height="49" fill="#b1b4ad"><path d="M6.3 36.4L225.8 256 6.3 475.6c-8.3 8.3-8.3 21.8 0 30.2 8.3 8.3 21.8 8.3 30.2 0l234.7-234.7c8.3-8.3 8.3-21.8 0-30.2L36.4 6.3C32.3 2.1 26.8 0 21.3 0c-5.4 0-10.9 2.1-15 6.3-8.4 8.3-8.4 21.8 0 30.1z"/></svg></button>',
         responsive: [
             {
                 breakpoint: 0,
