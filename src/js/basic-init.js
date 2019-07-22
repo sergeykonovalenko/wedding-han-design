@@ -1,8 +1,6 @@
 $(document).ready(function () {
     'use strict';
 
-    $('#js-modal-thanks').modal('show');
-
     const is_mobile = isMobile();
 
     if (is_mobile) {

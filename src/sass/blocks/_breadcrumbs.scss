@@ -1,4 +1,5 @@
 .breadcrumbs {
+    position: relative;
     padding: 25px 0;
     font-size: 18px;
     background-color: #fcf6f2;
@@ -26,4 +27,26 @@
 
 .breadcrumbs__current {
     color: #a2ac9a;
+}
+
+.breadcrumbs__decor-1 {
+    top: -115px;
+    left: -75px;
+}
+
+.breadcrumbs__decor-2 {
+    right: -230px;
+    bottom: -560px;
+}
+
+@media screen and (max-width: 1920px) {
+    .breadcrumbs__decor-2 {
+        bottom: -420px;
+    }
+}
+
+@media screen and (max-width: 1650px) {
+    .breadcrumbs__decor-1 {
+        left: -135px;
+    }
 }

@@ -7,6 +7,10 @@
 
 .extra-menu li {
     flex-grow: 1;
+
+    &:first-child a {
+        border-width: 1px 1px 1px 1px;
+    }
 }
 
 .extra-menu a {
@@ -33,10 +37,6 @@
         border: 1px solid #f4e2d3;
         border-radius: 5px;
         transform: scale(1.1);
-    }
-
-    .extra-menu li:first-child & {
-        border-width: 1px 1px 1px 1px;
     }
 }
 

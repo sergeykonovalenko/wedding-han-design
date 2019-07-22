@@ -5,42 +5,60 @@
     background-repeat: no-repeat;
     background-position: calc(50% + 565px) 36vh;
     overflow: hidden;
+
+    &--taxonomy-third-level {
+        padding-top: 75px;
+    }
+
+    .no-js &,
+    .no-webp & {
+        background-image: url("img/bg/rose.png");
+    }
+
+    .webp & {
+        background-image: url("img/bg/rose.webp");
+    }
+
+    .no-js &--taxonomy-third-level,
+    .no-webp &--taxonomy-third-level,
+    .webp &--taxonomy-third-level{
+        background-image: none;
+    }
 }
 
 body:not(.is-mobile) .main {
     background-attachment: fixed;
 }
 
-.no-js .main,
-.no-webp .main {
-    background-image: url("img/bg/rose.png");
-}
-
-.webp .main {
-    background-image: url("img/bg/rose.webp");
-}
-
-.main__nav {
+.main-products__nav {
     margin: 0 auto 80px;
 }
 
-.main__title {
+.main-products__title {
     max-width: 1170px;
     margin: 0 auto 10px;
 }
 
-.main__page-info {
+.main-products__page-info {
     margin-bottom: 23px;
 }
 
 .main__decor-1 {
     top: 250px;
     left: -170px;
+
+    &--taxonomy-third-level {
+        top: 610px;
+    }
 }
 
 .main__decor-2 {
     top: 1360px;
     right: -270px;
+
+    &--taxonomy-third-level {
+        top: 1600px;
+    }
 }
 
 .main__decor-3 {
