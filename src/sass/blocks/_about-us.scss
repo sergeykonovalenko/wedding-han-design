@@ -1,0 +1,50 @@
+.about-us {
+    position: relative;
+    padding-top: 145px;
+    padding-bottom: 120px;
+}
+
+.about-us__content {
+
+}
+
+.about-us__img {
+    float: left;
+    width: 570px;
+    margin-right: 30px;
+    border-radius: 4px;
+}
+
+.about-us__text h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Coves", Tahoma, sans-serif;
+    text-align: left;
+    color: #9d824f;
+}
+
+.about-us__text p,
+.about-us__text ul {
+    margin: 16px 0;
+    line-height: 1.2em;
+}
+
+.about-us__text *:first-child {
+    margin-top: 0;
+}
+
+.about-us__text *:last-child {
+    margin-bottom: 0;
+}
+
+.about-us__decor {
+    top: 160px;
+    right: -30px;
+}
+
+@media screen and (max-width: 1920px) {
+    .about-us__decor {
+        right: -60px;
+    }
+}

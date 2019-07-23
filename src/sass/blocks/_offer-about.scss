@@ -1,0 +1,24 @@
+.offer-about {
+    background-color: #e5e6df;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-js .offer-about,
+.no-webp .offer-about {
+    background-image: url("img/bg/offer-about.jpg");
+}
+
+.webp .offer-about {
+    background-image: url("img/bg/offer-about.webp");
+}
+
+.offer-about__text {
+    padding-bottom: 30px;
+}
+
+.offer-about h1 {
+    font-weight: 700;
+    font-family: "Coves", Tahoma, sans-serif;
+}

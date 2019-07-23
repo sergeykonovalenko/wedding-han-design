@@ -1,0 +1,68 @@
+.about-illustration {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -380px;
+        bottom: -250px;
+        width: 667px;
+        height: 574px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+
+        .no-js &,
+        .no-webp & {
+            background-image: url("img/bg/rose.png");
+        }
+
+        .webp & {
+            background-image: url("img/bg/rose.webp");
+        }
+    }
+}
+
+.about-illustration__head {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.about-illustration__head h2 {
+    margin-bottom: 22px;
+}
+
+.about-illustration__head p {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.about-illustration__head *:first-child {
+    margin-top: 0;
+}
+
+.about-illustration__head *:last-child {
+    margin-bottom: 0;
+}
+
+.about-illustration__img {
+    margin: 0 auto 135px;
+}
+
+.about-illustration__decor {
+    top: -190px;
+    left: -159px;
+}
+
+@media screen and (max-width: 1920px) {
+    .about-illustration {
+        &::after {
+            right: -480px;
+        }
+    }
+
+    .about-illustration__decor {
+        top: 0;
+    }
+}

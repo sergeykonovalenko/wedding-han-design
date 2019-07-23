@@ -111,17 +111,15 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-    }
-}
 
-.mobile-header__phone::before {
-    .no-js &,
-    .no-webp & {
-        background-image: url("img/base/phone-mobile.png");
-    }
+        .no-js &,
+        .no-webp & {
+            background-image: url("img/base/phone-mobile.png");
+        }
 
-    .webp & {
-        background-image: url("img/base/phone-mobile.webp");
+        .webp & {
+            background-image: url("img/base/phone-mobile.webp");
+        }
     }
 }
 

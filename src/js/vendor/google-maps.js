@@ -20,12 +20,7 @@ function initMap() {
     });
 
     let InfoWindow = new google.maps.InfoWindow({
-        content: ''+
-            '<div class="info-window">' +
-            '   Малиновський рынок, Р57<br>' +
-            '   Магазин “Технолюкс”<br>' +
-            '   Телефон: <a href="tel:+380688199506">+38 (068) 819 95 06</a>' +
-            '</div>'
+        content: '<div class="info-window"><strong>Wedding HanDesign</strong><p>Wedding accessories for wedding planning</p><a href="tel:08000850585">0800 085 0585</a></div>'
     });
 
     marker.addListener('click', function () {
