@@ -1,4 +1,4 @@
-.contacts-index {
+.contacts-letter {
     position: relative;
     padding-top: 155px;
     padding-bottom: 185px;
@@ -6,21 +6,21 @@
     background-position: center;
 }
 
-.no-js .contacts-index,
-.no-webp .contacts-index {
-    background-image: url("img/bg/contacts-index.jpg");
+.no-js .contacts-letter,
+.no-webp .contacts-letter {
+    background-image: url("img/bg/contacts-letter.jpg");
 }
 
-.webp .contacts-index {
-    background-image: url("img/bg/contacts-index.webp");
+.webp .contacts-letter {
+    background-image: url("img/bg/contacts-letter.webp");
 }
 
-.contacts-index__box {
+.contacts-letter__box {
     position: relative;
     margin-left: 21px;
 }
 
-.contacts-index__list {
+.contacts-letter__list {
     @include reset-list;
 
     position: absolute;
@@ -30,11 +30,11 @@
     width: 250px;
 }
 
-.contacts-index__list li {
+.contacts-letter__list li {
 
 }
 
-.contacts-index__list a {
+.contacts-letter__list a {
     display: inline-flex;
     align-items: center;
     font-size: 18px;
@@ -63,36 +63,36 @@
 }
 
 /////
-.no-js .contacts-index__list li:nth-child(1) a::before,
+.no-js .contacts-letter__list li:nth-child(1) a::before,
 .no-webp .order {
     background-image: url("img/base/contact-marker-icon.png");
 }
 
-.webp .contacts-index__list li:nth-child(1) a::before {
+.webp .contacts-letter__list li:nth-child(1) a::before {
     background-image: url("img/base/contact-marker-icon.webp");
 }
 
 /////
-.no-js .contacts-index__list li:nth-child(2) a::before,
+.no-js .contacts-letter__list li:nth-child(2) a::before,
 .no-webp .order {
     background-image: url("img/base/contact-email-icon.png");
 }
 
-.webp .contacts-index__list li:nth-child(2) a::before {
+.webp .contacts-letter__list li:nth-child(2) a::before {
     background-image: url("img/base/contact-email-icon.webp");
 }
 
 /////
-.no-js .contacts-index__list li:nth-child(3) a::before,
+.no-js .contacts-letter__list li:nth-child(3) a::before,
 .no-webp .order {
     background-image: url("img/base/contact-phone-icon.png");
 }
 
-.webp .contacts-index__list li:nth-child(3) a::before {
+.webp .contacts-letter__list li:nth-child(3) a::before {
     background-image: url("img/base/contact-phone-icon.webp");
 }
 
-.contacts-index__decor {
+.contacts-letter__decor {
     top: 50px;
     left: -230px;
 }

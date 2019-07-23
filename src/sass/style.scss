@@ -20,7 +20,7 @@
 @import "blocks/social-top-nav";
 @import "blocks/social-top-nav";
 @import "blocks/offer-home";
-@import "blocks/offer-social";
+@import "blocks/social-box";
 @import "blocks/offer-slider";
 @import "blocks/decor";
 @import "blocks/index-wrapper";
@@ -28,7 +28,7 @@
 @import "blocks/triggers";
 @import "blocks/order";
 @import "blocks/error";
-@import "blocks/contacts-index";
+@import "blocks/contacts-letter";
 @import "blocks/main-footer";
 /* ==========================================================================
    WEDDING TRENDS
@@ -68,6 +68,11 @@
    ========================================================================== */
 @import "blocks/categories";
 @import "blocks/category";
+/* ==========================================================================
+   CONTACTS
+   ========================================================================== */
+@import "blocks/offer-contacts";
+@import "blocks/map";
 /* Modal order
    ========================================================================== */
 @import "blocks/modal-order";

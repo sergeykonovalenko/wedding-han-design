@@ -25,6 +25,14 @@
     background-color: rgba(255, 255, 255, 0.85);
 }
 
+.offer-home__social {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate(0, -50%);
+}
+
 .offer-home__decor-1 {
     top: -115px;
     left: -75px;
@@ -38,5 +46,11 @@
 @media screen and (max-width: 1650px) {
     .offer-home__decor-1 {
         left: -135px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .offer-home__social {
+        display: none;
     }
 }

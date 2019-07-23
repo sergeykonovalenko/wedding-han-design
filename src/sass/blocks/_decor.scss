@@ -96,6 +96,11 @@
     height: 575px;
 }
 
+.decor__element--18 {
+    width: 218px;
+    height: 250px;
+}
+
 /*decor 1*/
 .no-js .decor__element--1,
 .no-webp .decor__element--1 {
@@ -119,11 +124,11 @@
 /*decor 3*/
 .no-js .decor__element--3,
 .no-webp .decor__element--3 {
-    background-image: url("img/bg/triggers-decor.png");
+    background-image: url("img/bg/triggers-decor-1.png");
 }
 
 .webp .decor__element--3 {
-    background-image: url("img/bg/triggers-decor.webp");
+    background-image: url("img/bg/triggers-decor-1.webp");
 }
 
 /*decor 4*/
@@ -149,11 +154,11 @@
 /*decor 6*/
 .no-js .decor__element--6,
 .no-webp .decor__element--6 {
-    background-image: url("img/bg/contacts-index-decor.png");
+    background-image: url("img/bg/contacts-letter-decor.png");
 }
 
 .webp .decor__element--6 {
-    background-image: url("img/bg/contacts-index-decor.webp");
+    background-image: url("img/bg/contacts-letter-decor.webp");
 }
 
 /*decor 7*/
@@ -264,4 +269,14 @@
 
 .webp .decor__element--17 {
     background-image: url("img/bg/main-decor-2.webp");
+}
+
+/*decor 18*/
+.no-js .decor__element--18,
+.no-webp .decor__element--18 {
+    background-image: url("img/bg/triggers-decor-2.png");
+}
+
+.webp .decor__element--18 {
+    background-image: url("img/bg/triggers-decor-2.webp");
 }

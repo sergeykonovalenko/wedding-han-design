@@ -1,5 +1,9 @@
 .triggers {
     position: relative;
+
+    &--contacts {
+        padding-top: 120px;
+    }
 }
 
 .triggers__title {
@@ -107,13 +111,18 @@
     }
 }
 
-.triggers__decor {
+.triggers__decor--1 {
     top: -274px;
     left: -159px;
 }
 
+.triggers__decor--2 {
+    top: 140px;
+    right: -30px;
+}
+
 @media screen and (max-width: 1780px) {
-    .triggers__decor {
+    .triggers__decor--1 {
         top: -25px;
     }
 }

@@ -1,0 +1,47 @@
+.social-box {
+    @include reset-list;
+
+    &--horizontal {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.social-box--vertical .social-box__item {
+    margin-bottom: 2px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.social-box--horizontal .social-box__item {
+    margin-right: 4px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.social-box__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    .social-box--vertical & {
+        width: 44px;
+        height: 112px;
+    }
+
+    .social-box--horizontal & {
+        width: 80px;
+        height: 70px;
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
