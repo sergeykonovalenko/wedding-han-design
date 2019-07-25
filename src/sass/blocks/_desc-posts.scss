@@ -1,0 +1,36 @@
+.desc-posts {
+    position: relative;
+    z-index: 2;
+    padding-top: 130px;
+    padding-bottom: 125px;
+}
+
+.desc-posts__text {
+    text-align: center;
+}
+
+.desc-posts__text h2,
+.desc-posts__text h3 {
+    margin-top: 50px;
+    margin-bottom: 13px;
+}
+
+.desc-posts__text p,
+.desc-posts__text ul {
+    margin: 16px 0;
+    line-height: 1.25em;
+}
+
+.desc-posts__text *:first-child {
+    margin-top: 0;
+}
+
+.desc-posts__text *:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1260px) {
+    .desc-posts__text br {
+        display: none;
+    }
+}

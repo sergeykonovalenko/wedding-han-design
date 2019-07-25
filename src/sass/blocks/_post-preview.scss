@@ -1,0 +1,76 @@
+.post-preview {
+
+}
+
+.post-preview__title {
+    margin-bottom: 60px;
+}
+
+.post-preview__title a {
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "Coves", Tahoma, sans-serif;
+    color: #9d824f;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #c3ab7e;
+    }
+}
+
+.post-preview__body {
+    display: flex;
+}
+
+.post-preview__img-link {
+    display: block;
+    margin-right: 30px;
+}
+
+.post-preview__img-link img {
+    width: 570px;
+    height: 578px;
+    border-radius: 4px;
+}
+
+.post-preview__box {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+}
+
+.post-preview__author {
+    margin-bottom: 42px;
+}
+
+.post-preview__text {
+    margin-bottom: 15px;
+}
+
+.post-preview__text p {
+    margin-bottom: 0;
+    line-height: 1.25em;
+}
+
+.post-preview__more {
+    margin-top: auto;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: .6em;
+    color: #7f8679;
+    transition: all .15s ease-in;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: #bec5b8;
+    }
+}
+
+.post-preview__more span {
+    position: relative;
+    top: 3px;
+}

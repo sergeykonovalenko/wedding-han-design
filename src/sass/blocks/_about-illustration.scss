@@ -1,5 +1,6 @@
 .about-illustration {
     position: relative;
+    padding-bottom: 135px;
 
     &::after {
         content: "";
@@ -47,7 +48,7 @@
 }
 
 .about-illustration__img {
-    margin: 0 auto 135px;
+    margin: 0 auto;
 }
 
 .about-illustration__decor {

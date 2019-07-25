@@ -1,0 +1,81 @@
+.main-posts {
+    position: relative;
+    padding-top: 57px;
+    padding-bottom: 145px;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -280px;
+        bottom: 510px;
+        z-index: 1;
+        width: 667px;
+        height: 574px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+
+        .no-js &,
+        .no-webp & {
+            background-image: url("img/bg/rose.png");
+        }
+
+        .webp & {
+            background-image: url("img/bg/rose.webp");
+        }
+    }
+}
+
+.main-posts__page-info {
+    margin-bottom: 70px;
+}
+
+.posts__list {
+    @include reset-list;
+
+    margin-bottom: 80px;
+}
+
+.posts__item {
+    margin-bottom: 114px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:nth-child(even) .post-preview__box {
+        order: 1;
+        margin-right: 30px;
+    }
+
+    &:nth-child(even) .post-preview__img-link {
+        order: 2;
+        margin-right: 0;
+    }
+}
+
+.main-posts__decor-1 {
+    top: 140px;
+    right: -30px;
+}
+
+.main-posts__decor-2 {
+    top: 795px;
+    left: -170px;
+}
+
+.main-posts__decor-3 {
+    top: 3250px;
+    right: -270px;
+}
+
+.main-posts__decor-4 {
+    top: 5070px;
+    left: -70px;
+}
+
+.main-posts__decor-5 {
+    top: 6170px;
+    left: -5px;
+}

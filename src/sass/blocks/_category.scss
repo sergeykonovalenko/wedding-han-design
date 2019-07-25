@@ -11,6 +11,11 @@
     &:focus .category__img {
         transform: scale(1.1);
     }
+
+    &:hover .category__title,
+    &:focus .category__title {
+        background-color: rgba(162, 172, 154, 1);
+    }
 }
 
 .category__title {
@@ -18,9 +23,13 @@
     top: 50%;
     left: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    min-height: 66px;
     margin: 0;
-    padding: 18px 0;
+    padding: 0 15px;
     font-weight: 700;
     font-size: 30px;
     font-family: "Coves", Tahoma, sans-serif;
@@ -29,6 +38,7 @@
     color: #fff;
     background-color: rgba(162, 172, 154, .9);
     transform: translate(0, -50%);
+    transition: all .15s ease-in;
 }
 
 .category__img {

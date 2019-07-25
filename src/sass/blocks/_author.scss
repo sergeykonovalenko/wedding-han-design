@@ -1,0 +1,59 @@
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author__img-box {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        width: 202px;
+        height: 90px;
+        top: 0;
+        left: 88px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+
+        .no-js &,
+        .no-webp & {
+            background-image: url("img/bg/gold.png");
+        }
+
+        .webp & {
+            background-image: url("img/bg/gold.webp");
+        }
+    }
+}
+
+.author__img {
+    position: relative;
+    z-index: 2;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #ddd3c2;
+    border-radius: 50%;
+}
+
+.author__info {
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.111111em;
+    font-family: "Coves", Tahoma, sans-serif;
+    text-align: left;
+    color: #373736;
+}
+
+.author__info span {
+    color: #bda29f;
+}

@@ -1,5 +1,6 @@
 .triggers {
     position: relative;
+    z-index: 2;
 
     &--contacts {
         padding-top: 120px;
@@ -53,19 +54,19 @@
     }
 
     &:nth-child(1)::before {
-        background-image: url("img/base/triggers-icon-1.svg");
+        background-image: url("img/bg/triggers-icon-1.svg");
     }
 
     &:nth-child(2)::before {
-        background-image: url("img/base/triggers-icon-2.svg");
+        background-image: url("img/bg/triggers-icon-2.svg");
     }
 
     &:nth-child(3)::before {
-        background-image: url("img/base/triggers-icon-3.svg");
+        background-image: url("img/bg/triggers-icon-3.svg");
     }
 
     &:nth-child(4)::before {
-        background-image: url("img/base/triggers-icon-4.svg");
+        background-image: url("img/bg/triggers-icon-4.svg");
     }
 
     &::after {

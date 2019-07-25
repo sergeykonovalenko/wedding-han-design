@@ -1,21 +1,44 @@
 .offer-internal {
     position: relative;
-    padding: 45px 0;
+    padding: 50px 0;
 }
 
 .offer-internal__text {
     padding: 30px 35px 54px;
     background-color: rgba(255, 255, 255, 0.85);
+
+    &--extra {
+        font-size: 30px;
+    }
 }
 
 .offer-internal__text h1 {
-    margin-bottom: 0;
+    margin-top: 32px;
+    margin-bottom: 16px;
     font-size: 60px;
+}
+
+.offer-internal__text--extra h1 {
+    font-weight: 700;
+    font-family: "Coves", Tahoma, sans-serif;
 }
 
 .offer-internal__text p {
     margin: 16px 0;
     line-height: 1.25em;
+}
+
+.offer-internal__text strong {
+    font-weight: 700;
+}
+
+.offer-internal__text em {
+    font-style: normal;
+    font-family: Arial, Tahoma, sans-serif;
+}
+
+.offer-internal__text p em {
+    color: #5c5c57;
 }
 
 .offer-internal__text *:first-child {

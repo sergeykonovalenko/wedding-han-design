@@ -114,11 +114,11 @@
 
         .no-js &,
         .no-webp & {
-            background-image: url("img/base/phone-mobile.png");
+            background-image: url("img/bg/phone-mobile.png");
         }
 
         .webp & {
-            background-image: url("img/base/phone-mobile.webp");
+            background-image: url("img/bg/phone-mobile.webp");
         }
     }
 }
