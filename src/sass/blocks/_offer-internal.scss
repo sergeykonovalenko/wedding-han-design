@@ -4,7 +4,7 @@
 }
 
 .offer-internal__text {
-    padding: 30px 35px 54px;
+    padding: 36px 35px 54px;
     background-color: rgba(255, 255, 255, 0.85);
 
     &--extra {
@@ -14,12 +14,13 @@
 
 .offer-internal__text h1 {
     margin-top: 32px;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
     font-size: 60px;
 }
 
 .offer-internal__text--extra h1 {
     font-weight: 700;
+    line-height: 1.2em;
     font-family: "Coves", Tahoma, sans-serif;
 }
 

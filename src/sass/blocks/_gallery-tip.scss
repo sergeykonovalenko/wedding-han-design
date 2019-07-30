@@ -1,0 +1,28 @@
+.gallery-tip {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery-tip__item {
+    margin-right: 22px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(n + 4) {
+        margin-top: 22px;
+    }
+}
+
+.gallery-tip__link {
+    display: block;
+}
+
+.gallery-tip__img {
+    width: 375px;
+    height: 392px;
+    border-radius: 15px;
+}

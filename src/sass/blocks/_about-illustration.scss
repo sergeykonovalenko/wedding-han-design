@@ -29,14 +29,20 @@
     text-align: center;
 }
 
-.about-illustration__head h2 {
+.about-illustration__head h2,
+.about-illustration__head h3 {
+    margin-top: 44px;
     margin-bottom: 22px;
 }
 
-.about-illustration__head p {
-    margin: 0;
-    font-weight: 700;
+.about-illustration__head p,
+.about-illustration__head ul {
+    margin: 16px 0;
     line-height: 1.2em;
+}
+
+.about-illustration__head strong {
+    font-weight: 700;
 }
 
 .about-illustration__head *:first-child {

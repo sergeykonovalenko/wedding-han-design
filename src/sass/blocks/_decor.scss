@@ -5,6 +5,7 @@
 }
 
 .decor__element {
+    display: block;
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: contain;
@@ -26,7 +27,6 @@
 }
 
 .decor__element--4 {
-    display: block;
     width: 82px;
     height: 78px;
 }
@@ -99,6 +99,11 @@
 .decor__element--18 {
     width: 218px;
     height: 250px;
+}
+
+.decor__element--19 {
+    width: 73px;
+    height: 63px;
 }
 
 /*decor 1*/
@@ -279,4 +284,14 @@
 
 .webp .decor__element--18 {
     background-image: url("img/bg/triggers-decor-2.webp");
+}
+
+/*decor 19*/
+.no-js .decor__element--19,
+.no-webp .decor__element--19 {
+    background-image: url("img/bg/leaf.png");
+}
+
+.webp .decor__element--19 {
+    background-image: url("img/bg/leaf.webp");
 }

@@ -1,0 +1,79 @@
+.wedding-tip {
+    padding-top: 72px;
+}
+
+.wedding-tip__desc {
+
+    &--centered {
+        text-align: center;
+    }
+}
+
+.wedding-tip__desc h1,
+.wedding-tip__desc h2,
+.wedding-tip__desc h3 {
+    margin-top: 56px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-family: "Coves", Tahoma, sans-serif;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: #9d824f;
+}
+
+.wedding-tip__desc h1 {
+    font-size: 40px;
+}
+
+.wedding-tip__desc h2 {
+    font-size: 40px;
+}
+
+.wedding-tip__desc h3 {
+    font-size: 34px;
+}
+
+.wedding-tip__desc p,
+.wedding-tip__desc ul {
+    margin: 18px 0;
+    line-height: 1.25em;
+}
+
+.wedding-tip__desc *:first-child {
+    margin-top: 0;
+}
+
+.wedding-tip__desc *:last-child {
+    margin-bottom: 0;
+}
+
+.wedding-tip__collage {
+    margin: 33px 0 0 0;
+}
+
+.wedding-tip__button-box {
+    position: absolute;
+    bottom: 73px;
+    left: 15px;
+    z-index: 2;
+    margin-bottom: 0;
+
+    &--reflected {
+        right: 15px;
+        left: auto;
+    }
+}
+
+.wedding-tip__button {
+    min-width: 231px;
+}
+
+.wedding-tip__button-decor {
+    top: -14px;
+    right: -28px;
+}
+
+.wedding-tip__gallery {
+    margin: 33px 0 0 0;
+}

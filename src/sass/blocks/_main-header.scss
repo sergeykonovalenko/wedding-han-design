@@ -50,6 +50,10 @@
     }
 }
 
+.main-header__extra-nav li.current-menu-item a {
+    color: #9d824f;
+}
+
 .main-header__extra-nav li:first-child a {
     padding: 0 14px;
     color: #fff;
@@ -61,6 +65,10 @@
     &:focus {
         background-color: #bb9b97;
     }
+}
+
+.main-header__extra-nav li.current-menu-item:first-child a {
+    background-color: #bb9b97;
 }
 
 .main-header__contacts-box {

@@ -1,0 +1,121 @@
+.collage {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 98px 0;
+    list-style: none;
+}
+
+.collage__item {
+    position: relative;
+    z-index: 1;
+
+    &--central {
+        position: absolute;
+        top: 125px;
+        left: 395px;
+        z-index: 2;
+
+        .collage--reflected & {
+            left: 353px;
+        }
+    }
+}
+
+.collage__img-link {
+    display: block;
+
+    &--central {
+        position: relative;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: contain;
+
+            .collage--reflected & {
+                transform: scale(-1, 1);
+            }
+        }
+
+        &::before {
+            top: -126px;
+            right: -71px;
+            width: 301px;
+            height: 329px;
+
+            .no-js &,
+            .no-webp & {
+                background-image: url("img/bg/collage-branches.png");
+            }
+
+            .webp & {
+                background-image: url("img/bg/collage-branches.webp");
+            }
+
+            .collage--reflected & {
+                right: auto;
+                left: -71px;
+            }
+        }
+
+        &::after {
+            bottom: -25px;
+            left: -127px;
+            width: 342px;
+            height: 125px;
+
+            .no-js &,
+            .no-webp & {
+                background-image: url("img/bg/collage-gold.png");
+            }
+
+            .webp & {
+                background-image: url("img/bg/collage-gold.webp");
+            }
+
+            .collage--reflected & {
+                right: -127px;
+                left: auto;
+            }
+        }
+    }
+}
+
+.collage__img {
+    position: relative;
+    z-index: 2;
+    border-radius: 4px;
+
+    &--left {
+        width: 570px;
+        height: 360px;
+    }
+
+    &--central {
+        width: 421px;
+        height: 376px;
+        border: 15px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0 13px 35px rgba(100, 106, 95, .2);
+    }
+
+    &--right {
+        width: 404px;
+        height: 427px;
+    }
+
+    .collage--reflected &--left {
+        width: 404px;
+        height: 427px;
+    }
+
+    .collage--reflected &--right {
+        width: 570px;
+        height: 360px;
+    }
+}
