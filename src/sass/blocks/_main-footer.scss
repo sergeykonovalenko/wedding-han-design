@@ -75,7 +75,31 @@
     }
 }
 
+.main-footer__nav .current-menu-item a {
+    color: #9d824f;
+}
+
 .main-footer__decor {
     right: -240px;
     bottom: -335px;
+}
+
+@media screen and (max-width: 1530px) {
+    .main-footer__decor {
+        right: -355px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-footer__decor {
+        right: -410px;
+    }
+
+    .main-footer__nav li {
+        margin-right: 20px;
+
+        &::after {
+            right: -11px;
+        }
+    }
 }

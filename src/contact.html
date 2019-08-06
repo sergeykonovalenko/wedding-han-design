@@ -39,7 +39,7 @@
 
     <div class="overflow-hidden">
         <header class="main-header">
-            <div class="mobile-header">
+            <div class="mobile-header Fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex align-items-center">
@@ -51,7 +51,7 @@
                             <a class="mobile-header__logo" href="index.html" title="Wedding HanDesign">
                                 <img src="img/base/logo.svg" width="44" height="40" alt="Wedding HanDesign">
                             </a>
-                            <a class="mobile-header__phone" href="tel:08000850585">0800 085 0585</a>
+                            <a class="mobile-header__phone" href="tel:08000850585"><span>0800 085 0585</span></a>
                         </div>
                     </div>
                 </div>
@@ -61,9 +61,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
-                            <ul class="main-header__extra-nav">
+                            <ul class="main-header__left-nav">
                                 <li><a href="wedding-tips.html">Wedding Tips</a></li>
-                                <li><a href="about.html">About us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
@@ -72,14 +72,16 @@
                                     <li><a href="tel:08000850585">0800 085 0585</a></li>
                                     <li><a href="mailto:lana.nocon@gmail.com">lana.nocon@gmail.com</a></li>
                                 </ul>
-                                <a class="main-header__contacts-link" href="contacts.html">Contact</a>
+                                <ul class="main-header__right-nav">
+                                    <li class="current-menu-item"><a href="contact.html">Contact</a></li>
+                                </ul>
                             </div>
                             <div class="main-header__search search">
                                 <form action="#" method="GET">
                                     <label class="visually-hidden" for="s">Search</label>
-                                    <input class="search__field" id="s" type="text" name="s">
+                                    <input class="search__field" id="s" type="search" name="s">
                                     <button class="search__button">
-                                        <span class="visually-hidden">Поиск</span>
+                                        <span class="visually-hidden">Search</span>
                                     </button>
                                 </form>
                             </div>
@@ -113,10 +115,10 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="taxonomy-1st-and-2nd-level--has-children.html">Wedding invitations</a>
+                                            <a href="taxonomy-2nd-level--has-children.html">Wedding invitations</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Collection</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Collection</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Classic</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Modest</a></li>
@@ -141,7 +143,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Colour</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Colour</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Pure white</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Ecru</a></li>
@@ -166,7 +168,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Type of flower</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Type of flower</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Hydrangea</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Sunflower</a></li>
@@ -191,7 +193,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Other accessories</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Other accessories</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Save the date</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Extra tickets</a></li>
@@ -261,8 +263,8 @@
                                 <div class="top-nav__service" id="service">
                                     <ul>
                                         <li><a href="wedding-tips.html">Wedding Tips</a></li>
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="contacts.html">Contact</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav><!-- / .top-nav -->
@@ -271,6 +273,13 @@
                 </div>
             </div>
         </header><!-- / .main-header -->
+
+        <script>
+            let mapLocation = {"address":"139 London Rd, Shardlow, Derby DE72 2HA, Великобритания","lat":"52.86838610848416","lng":"-1.3436758110450455"};
+            let siteName = 'Wedding HanDesign';
+            let siteDescription = 'Wedding accessories for wedding planning';
+            let phone = '0800 085 0585';
+        </script>
 
         <section class="offer-contacts order order--inner">
             <div class="container">
@@ -368,12 +377,12 @@
                         <div class="contacts-letter__box">
                             <ul class="contacts-letter__list">
                                 <li><a href="https://goo.gl/maps/VVu9XmXnT8tuB3up9" target="_blank">139a London Road.<br> Shardlow. Derby. DE72 2HA</a></li>
-                                <li><a href="mailto:lana.nocon@gmail.com">Lana.nocon@gmail.com</a></li>
+                                <li><a href="mailto:lana.nocon@gmail.com">lana.nocon@gmail.com</a></li>
                                 <li><a href="tel:08000850585">0800 085 0585</a></li>
                             </ul>
                             <picture class="contacts-letter__envelope">
                                 <source type="image/webp" srcset="img/base/envelope.webp">
-                                <img src="img/base/envelope.png" alt="">
+                                <img src="img/base/envelope.png" width="564" height="605" alt="">
                             </picture>
                         </div>
                     </div>
@@ -416,11 +425,11 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="main-footer__nav">
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Sample terms</a></li>
-                            <li><a href="#">Privacy & Cookies</a></li>
-                            <li><a href="#">Website disclaimer</a></li>
-                            <li><a href="#">Copyrights </a></li>
+                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                            <li><a href="terms-and-conditions.html">Sample terms</a></li>
+                            <li><a href="terms-and-conditions.html">Privacy & Cookies</a></li>
+                            <li><a href="terms-and-conditions.html">Website disclaimer</a></li>
+                            <li><a href="terms-and-conditions.html">Copyrights </a></li>
                         </ul>
                     </div>
                 </div>
@@ -431,12 +440,20 @@
         </footer><!-- / .main-footer -->
     </div><!-- / .overflow-hidden -->
 
-    <!-- Modal thanks -->
+    <div class="loader">
+        <div class="loader__icon">
+            <img src="img/base/loader.svg" alt="">
+        </div>
+    </div><!-- / .loader -->
+
     <div class="modal-thanks modal fade" id="js-modal-thanks" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button class="modal-thanks__close modal-close" type="button" data-dismiss="modal" aria-label="Close" title="Close">
                     <span class="visually-hidden">Close</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 512 512" fill="#fff"><path d="M505.943 6.058c-8.077-8.077-21.172-8.077-29.249 0L6.058 476.693c-8.077 8.077-8.077 21.172 0 29.249A20.612 20.612 0 0 0 20.683 512a20.614 20.614 0 0 0 14.625-6.059L505.943 35.306c8.076-8.076 8.076-21.171 0-29.248z"/><path d="M505.942 476.694L35.306 6.059c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.076-8.077 21.171 0 29.248l470.636 470.636a20.616 20.616 0 0 0 14.625 6.058 20.615 20.615 0 0 0 14.624-6.057c8.075-8.078 8.075-21.173-.001-29.25z"/></svg>
+                    </span>
                 </button>
                 <picture>
                     <source srcset="img/base/modal-thanks-img-1.webp" type="image/webp">
@@ -451,7 +468,13 @@
                 </picture>
             </div>
         </div>
-    </div>
+    </div><!-- / .modal-thanks -->
+
+    <script>
+        let templateUrl = 'https://weddinghandesign.co.uk/wp-content/themes/weddinghandesign';
+        let facebook = 'https://www.facebook.com/sergeyfreelance';
+        let instagram = 'https://www.instagram.com/sergeyfreelance';
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>

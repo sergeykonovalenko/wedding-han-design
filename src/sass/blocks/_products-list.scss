@@ -7,7 +7,8 @@
 
 .products-list__item {
     display: flex;
-    margin-right: 23px;
+    width: 281px;
+    margin-right: 15px;
 
     &:nth-child(4n) {
         margin-right: 0;
@@ -15,5 +16,63 @@
 
     &:nth-child(n + 5) {
         margin-top: 23px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .products-list__item {
+        &:nth-child(4n) {
+            margin-right: 15px;
+        }
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 4) {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .products-list__item {
+        &:nth-child(3n) {
+            margin-right: 15px;
+        }
+
+        &:nth-child(2n) {
+            margin-right: 0;
+        }
+
+        &:nth-child(n + 3) {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .products-list {
+        display: block;
+    }
+
+    .products-list__item {
+        margin-right: auto;
+        margin-left: auto;
+
+        &:nth-child(2n),
+        &:nth-child(3n) {
+            margin-right: auto;
+        }
+
+        &:nth-child(n + 2) {
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 311px) {
+    .products-list__item {
+        width: 100%;
     }
 }

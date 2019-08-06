@@ -1,10 +1,13 @@
 .offer-internal {
     position: relative;
     padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .offer-internal__text {
-    padding: 36px 35px 54px;
+    padding: 40px 35px 54px;
     background-color: rgba(255, 255, 255, 0.85);
 
     &--extra {
@@ -19,9 +22,7 @@
 }
 
 .offer-internal__text--extra h1 {
-    font-weight: 700;
     line-height: 1.2em;
-    font-family: "Coves", Tahoma, sans-serif;
 }
 
 .offer-internal__text p {
@@ -63,5 +64,29 @@
 @media screen and (max-width: 1650px) {
     .offer-internal__decor-1 {
         left: -135px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .offer-internal__decor-2 {
+        right: -285px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer-internal__text {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer-internal__text {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .offer-internal__decor-1 {
+        top: -67px;
     }
 }

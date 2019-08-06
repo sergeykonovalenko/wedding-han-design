@@ -12,3 +12,9 @@
         left: -210px;
     }
 }
+
+@media screen and (max-width: 1535px) {
+    .similar-products__decor {
+        display: none;
+    }
+}

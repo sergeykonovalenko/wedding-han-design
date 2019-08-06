@@ -1,11 +1,10 @@
 .modal-close {
     position: absolute;
+    z-index: 3;
     padding: 10px;
     width: 49px;
     height: 49px;
-    background: url("img/bg/close.svg") no-repeat center;
-    background-size: contain;
-    background-origin: content-box;
+    background-color: transparent;
     border: none;
     opacity: .4;
     cursor: pointer;
@@ -15,4 +14,8 @@
     &:focus {
         opacity: .7;
     }
+}
+
+.modal-close svg {
+    display: block;
 }

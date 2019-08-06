@@ -119,3 +119,227 @@
         height: 360px;
     }
 }
+
+@media screen and (max-width: 1260px) {
+    .collage__item--central {
+        top: 99px;
+        left: 314px;
+
+        .collage--reflected & {
+            left: 281px;
+        }
+    }
+
+    .collage__img {
+        height: auto;
+
+        &--right {
+            width: 321px;
+
+            .collage--reflected & {
+                width: 453px;
+                height: auto;
+            }
+        }
+
+        &--left {
+            width: 453px;
+
+            .collage--reflected & {
+                width: 321px;
+                height: auto;
+            }
+        }
+
+        &--central {
+            width: 335px;
+            border-width: 12px;
+        }
+    }
+
+    .collage__img-link--central {
+
+        &::before {
+            top: -100px;
+            right: -56px;
+            width: 239px;
+            height: 262px;
+
+            .collage--reflected & {
+                left: -57px;
+            }
+        }
+
+        &::after {
+            bottom: -20px;
+            left: -101px;
+            width: 272px;
+            height: 99px;
+
+            .collage--reflected & {
+                right: -101px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .collage__item--central {
+        top: 74px;
+        left: 233px;
+
+        .collage--reflected & {
+            left: 208px;
+        }
+    }
+
+    .collage__img {
+
+        &--right {
+            width: 238px;
+
+            .collage--reflected & {
+                width: 336px;
+            }
+        }
+
+        &--left {
+            width: 336px;
+
+            .collage--reflected & {
+                width: 238px;
+            }
+        }
+
+        &--central {
+            width: 248px;
+            border-width: 9px;
+        }
+    }
+
+    .collage__img-link--central {
+
+        &::before {
+            top: -74px;
+            right: -42px;
+            width: 178px;
+            height: 194px;
+
+            .collage--reflected & {
+                left: -42px;
+            }
+        }
+
+        &::after {
+            bottom: -15px;
+            left: -75px;
+            width: 202px;
+            height: 74px;
+
+            .collage--reflected & {
+                right: -75px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collage__item--central {
+        top: 54px;
+        left: 172px;
+
+        .collage--reflected & {
+            left: 154px;
+        }
+    }
+
+    .collage__img {
+
+        &--right {
+            width: 176px;
+
+            .collage--reflected & {
+                width: 248px;
+            }
+        }
+
+        &--left {
+            width: 248px;
+
+            .collage--reflected & {
+                width: 176px;
+            }
+        }
+
+        &--central {
+            width: 184px;
+            border-width: 4px;
+        }
+    }
+
+    .collage__img-link--central {
+
+        &::before {
+            top: -55px;
+            right: -31px;
+            width: 131px;
+            height: 143px;
+
+            .collage--reflected & {
+                left: -31px;
+            }
+        }
+
+        &::after {
+            bottom: -11px;
+            left: -55px;
+            width: 149px;
+            height: 54px;
+
+            .collage--reflected & {
+                right: -55px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .collage {
+        display: block;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+
+    .collage__item {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--central {
+            position: static;
+        }
+    }
+
+    .collage__img-link--central {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .collage__img {
+        width: 100%;
+        border: 3px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0 13px 35px rgba(100, 106, 95, 0.2);
+        object-fit: cover;
+
+        .collage--reflected &--left,
+        .collage--reflected &--right{
+            width: 100%;
+        }
+    }
+}

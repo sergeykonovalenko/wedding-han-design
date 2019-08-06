@@ -1,0 +1,26 @@
+.decor-list ul {
+    padding: 0;
+    line-height: 1.2em;
+    list-style: none;
+}
+
+.decor-list li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 40px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 11px;
+        left: 20px;
+        width: 8px;
+        height: 8px;
+        background-color: #8a9b7c;
+        border-radius: 50%;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

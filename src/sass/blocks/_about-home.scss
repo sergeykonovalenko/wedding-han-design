@@ -26,18 +26,47 @@
     margin-bottom: 0;
 }
 
-.about-home__content picture {
+.about-home__img-box {
     float: right;
     margin-bottom: 5px;
     margin-left: 30px;
 }
 
 .about-home__img {
-    max-width: 570px;
+    width: 570px;
 }
 
 @media screen and (max-width: 1260px) {
     .about-home__img {
-        max-width: 450px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-home__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-home__text {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .about-home__img-box {
+        order: 2;
+        float: none;
+        margin: 0;
+    }
+
+    .about-home__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-home__content {
+         padding-left: 0;
+         border-left: none;
     }
 }

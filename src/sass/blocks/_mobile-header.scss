@@ -1,4 +1,9 @@
 .mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
     display: none;
     background-color: #fff;
     box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
@@ -123,14 +128,32 @@
     }
 }
 
-@media screen and (max-width: 1360px) {
+@media (min-width: 576px) {
+    .mobile-header .container {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1530px) {
     .mobile-header {
         display: block;
     }
 }
 
-@media screen and (width: 1360px) {
+@media screen and (width: 1530px) {
     .mobile-header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-header__phone {
+        &::before {
+            margin-right: 0;
+        }
+    }
+
+    .mobile-header__phone span {
         display: none;
     }
 }

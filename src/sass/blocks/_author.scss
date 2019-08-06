@@ -44,7 +44,6 @@
 .author__info {
     position: relative;
     z-index: 2;
-    margin-top: 30px;
     margin-bottom: 0;
     font-weight: 700;
     font-size: 36px;
@@ -55,4 +54,25 @@
 
 .author__info span {
     color: #bda29f;
+}
+
+@media screen and (max-width: 768px) {
+    .author__info br {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .author {
+        display: block;
+    }
+
+    .author__img-box {
+        width: 140px;
+        margin: 0 auto 15px;
+    }
+
+    .author__info {
+        text-align: center;
+    }
 }

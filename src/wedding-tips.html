@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="css/mmenu.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,7 +39,7 @@
 
     <div class="overflow-hidden">
         <header class="main-header">
-            <div class="mobile-header">
+            <div class="mobile-header Fixed">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 d-flex align-items-center">
@@ -50,7 +51,7 @@
                             <a class="mobile-header__logo" href="index.html" title="Wedding HanDesign">
                                 <img src="img/base/logo.svg" width="44" height="40" alt="Wedding HanDesign">
                             </a>
-                            <a class="mobile-header__phone" href="tel:08000850585">0800 085 0585</a>
+                            <a class="mobile-header__phone" href="tel:08000850585"><span>0800 085 0585</span></a>
                         </div>
                     </div>
                 </div>
@@ -60,9 +61,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-6">
-                            <ul class="main-header__extra-nav">
+                            <ul class="main-header__left-nav">
                                 <li class="current-menu-item"><a href="wedding-tips.html">Wedding Tips</a></li>
-                                <li><a href="about.html">About us</a></li>
+                                <li><a href="about.html">About Us</a></li>
                             </ul>
                         </div>
                         <div class="col-6">
@@ -71,14 +72,16 @@
                                     <li><a href="tel:08000850585">0800 085 0585</a></li>
                                     <li><a href="mailto:lana.nocon@gmail.com">lana.nocon@gmail.com</a></li>
                                 </ul>
-                                <a class="main-header__contacts-link" href="contacts.html">Contact</a>
+                                <ul class="main-header__right-nav">
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
                             </div>
                             <div class="main-header__search search">
                                 <form action="#" method="GET">
                                     <label class="visually-hidden" for="s">Search</label>
-                                    <input class="search__field" id="s" type="text" name="s">
+                                    <input class="search__field" id="s" type="search" name="s">
                                     <button class="search__button">
-                                        <span class="visually-hidden">Поиск</span>
+                                        <span class="visually-hidden">Search</span>
                                     </button>
                                 </form>
                             </div>
@@ -112,10 +115,10 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="taxonomy-1st-and-2nd-level--has-children.html">Wedding invitations</a>
+                                            <a href="taxonomy-2nd-level--has-children.html">Wedding invitations</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Collection</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Collection</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Classic</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Modest</a></li>
@@ -140,7 +143,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Colour</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Colour</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Pure white</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Ecru</a></li>
@@ -165,7 +168,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Type of flower</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Type of flower</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Hydrangea</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Sunflower</a></li>
@@ -190,7 +193,7 @@
                                                     </ul>
                                                 </li>
                                                 <li class="menu-item-has-children">
-                                                    <a href="taxonomy-1st-and-2nd-level--has-children.html">Other accessories</a>
+                                                    <a href="taxonomy-2nd-level--has-children.html">Other accessories</a>
                                                     <ul class="sub-menu">
                                                         <li><a href="taxonomy-3rd-level.html">Save the date</a></li>
                                                         <li><a href="taxonomy-3rd-level.html">Extra tickets</a></li>
@@ -260,8 +263,8 @@
                                 <div class="top-nav__service" id="service">
                                     <ul>
                                         <li class="current-menu-item"><a href="wedding-tips.html">Wedding Tips</a></li>
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="contacts.html">Contact</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav><!-- / .top-nav -->
@@ -271,7 +274,7 @@
             </div>
         </header><!-- / .main-header -->
 
-        <section class="offer-wedding-tips offer-internal">
+        <section class="offer-wedding-tips offer-internal" style="background-image: url('img/bg/offer-wedding-tips.jpg');">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -296,11 +299,11 @@
                             <div class="main-posts__page-info page-info">
                                 <p class="page-info__current">Page 1 of 9</p>
                                 <p class="page-info__size">
-                                    <label class="visually-hidden" for="page-size">Products per Page</label>
+                                    <label class="visually-hidden" for="page-size">Posts per Page</label>
                                     <select class="page-info__select" id="page-size">
-                                        <option>24 Products per Page</option>
-                                        <option>48 Products per Page</option>
-                                        <option>96 Products per Page</option>
+                                        <option>10 Posts per Page</option>
+                                        <option>20 Posts per Page</option>
+                                        <option>40 Posts per Page</option>
                                     </select>
                                 </p>
                             </div>
@@ -308,16 +311,16 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <ul class="posts__list">
-                                <li class="posts__item post-preview">
+                            <ul class="posts-list">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">Wedding Invitations 2019 - The Trends</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-1.webp" type="image/webp">
-                                                <img src="img/base/post-preview-1.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-1.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -329,10 +332,16 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-1.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-1.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     In love engaged and Zack - time for wedding invitations! And so it's
                                                     time for us to introduce you to the 2019 trends for your wedding invitation
@@ -346,20 +355,23 @@
                                                     After all, it never hurts to be inspired. That's why we've put together the
                                                     2019 Wedding Invitations for you.
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">Inspirations around the Greenery Trend</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-2.webp" type="image/webp">
-                                                <img src="img/base/post-preview-2.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-2.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -371,10 +383,16 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-2.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-2.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     Rich green, delicate shoots - green wild nature. With hardly any other color,
                                                     we associate so much freshness, naturalness, joie de vivre and growth. And
@@ -384,20 +402,23 @@
                                                     is as versatile as it is versatile! As a keynote in nature, green can be
                                                     superbly combined with countless colors or stand alone on its own.
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">Crafting instructions Windlight place cards with glass</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-3.webp" type="image/webp">
-                                                <img src="img/base/post-preview-3.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-3.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -409,30 +430,39 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-3.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-3.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     We will show you how to put together your lantern place cards
                                                     with glass in a few simple steps to turn the tables into a
                                                     dreamlike sea of ​​lights at your celebration. The romantic place
                                                     cards are a wonderful eye-catcher. And that's how you make it easy ...
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">Pattern table To the Moon in Ultra Violet</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-4.webp" type="image/webp">
-                                                <img src="img/base/post-preview-4.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-4.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -444,10 +474,16 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-4.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-4.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     We have already revealed that Ultra Violet is the trend color of the year
                                                     and of course you have already received great inspiration from us about a
@@ -457,20 +493,23 @@
                                                     could be more appropriate than to meet Pantone's color trend demands and
                                                     bring the vastness of the universe to your banquet table? So, gradually,
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">3 ultimate tips on how to keep your kids busy at the wedding</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-5.webp" type="image/webp">
-                                                <img src="img/base/post-preview-5.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-5.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -482,30 +521,39 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-5.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-5.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     In the past, when it was still common to unload children from weddings,
                                                     more and more couples are choosing to share their special day with the
                                                     little ones. And if we are completely honest, such a day without bright
                                                     children's eyes would not be the same!
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">Checklist - In 30 seconds to the guest list for the wedding</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-6.webp" type="image/webp">
-                                                <img src="img/base/post-preview-6.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-6.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -517,10 +565,16 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-6.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-6.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     At some point during the wonderful time of wedding planning, one comes to the
                                                     question: Who do we invite to our wedding? And that is not always so easy to
@@ -528,20 +582,23 @@
                                                     that family and friends want to interfere in the guest planning. A real no-go,
                                                     but brides and grooms can often be unsettled.
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
-                                <li class="posts__item post-preview">
+                                <li class="posts-list__item post-preview">
                                     <h2 class="post-preview__title">
                                         <a href="wedding-tips-article.html">DIY Party Favor - Happy Tears Hankies Box</a>
                                     </h2>
                                     <div class="post-preview__body">
-                                        <a class="post-preview__img-link" href="wedding-tips-article.html">
+                                        <a class="post-preview__img-link post-preview__img-link--desktop" href="wedding-tips-article.html">
                                             <picture>
                                                 <source srcset="img/base/post-preview-7.webp" type="image/webp">
-                                                <img src="img/base/post-preview-7.jpg" width="570" height="578" alt="">
+                                                <img class="post-preview__img" src="img/base/post-preview-7.jpg" width="570" height="578" alt="">
                                             </picture>
                                         </a>
                                         <div class="post-preview__box">
@@ -553,10 +610,16 @@
                                                     </picture>
                                                 </p>
                                                 <p class="author__info">
-                                                    A wedding decoration tip from <span>Julia</span>
+                                                    A wedding decoration tip<br> from <span>Julia</span>
                                                 </p>
                                             </div><!-- / .author -->
                                             <div class="post-preview__text">
+                                                <a class="post-preview__img-link post-preview__img-link--mobile" href="wedding-tips-article.html">
+                                                    <picture>
+                                                        <source srcset="img/base/post-preview-7.webp" type="image/webp">
+                                                        <img class="post-preview__img" src="img/base/post-preview-7.jpg" width="570" height="578" alt="">
+                                                    </picture>
+                                                </a>
                                                 <p>
                                                     There is hardly a wedding that does not kill a few tears of happiness
                                                     sooner or later. As a bridal couple, you should be prepared and make
@@ -565,39 +628,23 @@
                                                     wonderful detail that your guests will love! That's why we show you
                                                     today a DIY tutorial for sweet tears of happiness.
                                                 </p>
+                                                <p class="post-preview__more-box-mobile">
+                                                    <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                                </p>
                                             </div>
-                                            <a class="post-preview__more" href="wedding-tips-article.html">Read more <span>>></span></a>
+                                            <a class="post-preview__more post-preview__more--desktop" href="wedding-tips-article.html">Read more <span>>></span></a>
                                         </div>
                                     </div>
                                 </li><!-- / .post-preview -->
                             </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <!--<div class="wp-pagenavi" role="navigation">
-                                <a class="first" href="#">1</a>
-                                <a class="previouspostslink" rel="prev" href="#"></a>
-                                <span class="extend">...</span>
-                                <a class="page smaller" title="Page 3" href="#">3</a>
-                                <a class="page smaller" title="Page 4" href="#">4</a>
-                                <span aria-current="page" class="current">5</span>
-                                <a class="page larger" title="Page 6" href="#">6</a>
-                                <a class="page larger" title="Page 7" href="#">7</a>
-                                <span class="extend">...</span>
-                                <a class="nextpostslink" rel="next" href="#"></a>
-                                <a class="last" href="#"> 8</a>
-                            </div>-->
                             <div class="wp-pagenavi" role="navigation">
                                 <span aria-current="page" class="current">1</span>
                                 <a class="page larger" title="Page 2" href="#">2</a>
                                 <a class="page larger" title="Page 3" href="#">3</a>
-                                <a class="page larger" title="Page 4" href="#">4</a>
-                                <a class="page larger" title="Page 5" href="#">5</a>
                                 <span class="extend">...</span>
                                 <a class="nextpostslink" rel="next" href="#"></a>
                                 <a class="last" href="#">8</a>
-                            </div>
+                            </div><!-- / .wp-pagenavi -->
                         </div>
                     </div>
                 </div>
@@ -711,7 +758,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section><!-- / .order -->
 
         <section class="contacts-letter">
             <div class="container">
@@ -721,12 +768,12 @@
                         <div class="contacts-letter__box">
                             <ul class="contacts-letter__list">
                                 <li><a class="shake" href="https://goo.gl/maps/VVu9XmXnT8tuB3up9" target="_blank">139a London Road.<br> Shardlow. Derby. DE72 2HA</a></li>
-                                <li><a class="shake" href="mailto:lana.nocon@gmail.com">Lana.nocon@gmail.com</a></li>
+                                <li><a class="shake" href="mailto:lana.nocon@gmail.com">lana.nocon@gmail.com</a></li>
                                 <li><a class="shake" href="tel:08000850585">0800 085 0585</a></li>
                             </ul>
                             <picture class="contacts-letter__envelope">
                                 <source type="image/webp" srcset="img/base/envelope.webp">
-                                <img src="img/base/envelope.png" alt="">
+                                <img src="img/base/envelope.png" width="564" height="605" alt="">
                             </picture>
                         </div>
                     </div>
@@ -742,11 +789,11 @@
                 <div class="row">
                     <div class="col-12">
                         <ul class="main-footer__nav">
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Sample terms</a></li>
-                            <li><a href="#">Privacy & Cookies</a></li>
-                            <li><a href="#">Website disclaimer</a></li>
-                            <li><a href="#">Copyrights </a></li>
+                            <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                            <li><a href="terms-and-conditions.html">Sample terms</a></li>
+                            <li><a href="terms-and-conditions.html">Privacy & Cookies</a></li>
+                            <li><a href="terms-and-conditions.html">Website disclaimer</a></li>
+                            <li><a href="terms-and-conditions.html">Copyrights </a></li>
                         </ul>
                     </div>
                 </div>
@@ -757,12 +804,20 @@
         </footer><!-- / .main-footer -->
     </div><!-- / .overflow-hidden -->
 
-    <!-- Modal thanks -->
+    <div class="loader">
+        <div class="loader__icon">
+            <img src="img/base/loader.svg" alt="">
+        </div>
+    </div><!-- / .loader -->
+
     <div class="modal-thanks modal fade" id="js-modal-thanks" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button class="modal-thanks__close modal-close" type="button" data-dismiss="modal" aria-label="Close" title="Close">
                     <span class="visually-hidden">Close</span>
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 512 512" fill="#fff"><path d="M505.943 6.058c-8.077-8.077-21.172-8.077-29.249 0L6.058 476.693c-8.077 8.077-8.077 21.172 0 29.249A20.612 20.612 0 0 0 20.683 512a20.614 20.614 0 0 0 14.625-6.059L505.943 35.306c8.076-8.076 8.076-21.171 0-29.248z"/><path d="M505.942 476.694L35.306 6.059c-8.076-8.077-21.172-8.077-29.248 0-8.077 8.076-8.077 21.171 0 29.248l470.636 470.636a20.616 20.616 0 0 0 14.625 6.058 20.615 20.615 0 0 0 14.624-6.057c8.075-8.078 8.075-21.173-.001-29.25z"/></svg>
+                    </span>
                 </button>
                 <picture>
                     <source srcset="img/base/modal-thanks-img-1.webp" type="image/webp">
@@ -777,7 +832,13 @@
                 </picture>
             </div>
         </div>
-    </div>
+    </div><!-- / .modal-thanks -->
+
+    <script>
+        let templateUrl = 'https://weddinghandesign.co.uk/wp-content/themes/weddinghandesign';
+        let facebook = 'https://www.facebook.com/sergeyfreelance';
+        let instagram = 'https://www.instagram.com/sergeyfreelance';
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -785,6 +846,8 @@
     <script src="js/parallax.min.js"></script>
     <!-- Slick Slider -->
     <script src="js/slick.min.js"></script>
+    <!-- Mmenu -->
+    <script src="js/mmenu.js"></script>
     <!-- Bootstrap Bundle -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Masked Input -->

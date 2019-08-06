@@ -1,12 +1,22 @@
 .breadcrumbs {
-    position: relative;
-    padding: 25px 0;
-    font-size: 18px;
-    background-color: #fcf6f2;
+
 }
 
-.breadcrumbs__link {
+span[property="itemListElement"] {
     margin-right: 8px;
+}
+
+.breadcrumbs .home span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    vertical-align: middle;
+    background: url('img/bg/home.svg') no-repeat 0 0;
+    background-size: contain;
+}
+
+.breadcrumbs a {
     color: #515151;
     transition: all .15s ease-in;
 
@@ -25,28 +35,6 @@
     color: #b2b2b2;
 }
 
-.breadcrumbs__current {
+.breadcrumbs .current-item {
     color: #a2ac9a;
-}
-
-.breadcrumbs__decor-1 {
-    top: -115px;
-    left: -75px;
-}
-
-.breadcrumbs__decor-2 {
-    right: -230px;
-    bottom: -560px;
-}
-
-@media screen and (max-width: 1920px) {
-    .breadcrumbs__decor-2 {
-        bottom: -420px;
-    }
-}
-
-@media screen and (max-width: 1650px) {
-    .breadcrumbs__decor-1 {
-        left: -135px;
-    }
 }

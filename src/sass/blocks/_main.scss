@@ -2,45 +2,26 @@
     position: relative;
     padding-top: 140px;
     padding-bottom: 145px;
-    background-repeat: no-repeat;
-    background-position: calc(50% + 565px) 36vh;
     overflow: hidden;
+
+    body:not(.is-mobile) &:not(&--taxonomy-third-level) {
+        background-repeat: no-repeat;
+        background-position: calc(50% + 565px) 36vh;
+        background-attachment: fixed;
+    }
 
     &--taxonomy-third-level {
         padding-top: 80px;
     }
 
-    .no-js &,
-    .no-webp & {
+    .no-js body:not(.is-mobile) &:not(&--taxonomy-third-level),
+    .no-webp body:not(.is-mobile) &:not(&--taxonomy-third-level) {
         background-image: url("img/bg/rose.png");
     }
 
-    .webp & {
+    .webp body:not(.is-mobile) &:not(&--taxonomy-third-level) {
         background-image: url("img/bg/rose.webp");
     }
-
-    .no-js &--taxonomy-third-level,
-    .no-webp &--taxonomy-third-level,
-    .webp &--taxonomy-third-level{
-        background-image: none;
-    }
-}
-
-body:not(.is-mobile) .main {
-    background-attachment: fixed;
-}
-
-.main-products__nav {
-    margin: 0 auto 80px;
-}
-
-.main-products__title {
-    max-width: 1170px;
-    margin: 0 auto 16px;
-}
-
-.main-products__page-info {
-    margin-bottom: 23px;
 }
 
 .main__decor-1 {
@@ -79,5 +60,20 @@ body:not(.is-mobile) .main {
 @media screen and (max-width: 1920px) {
     .main__decor-5 {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1535px) {
+    .main__decor-1,
+    .main__decor-2,
+    .main__decor-3,
+    .main__decor-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .main {
+        padding-top: 120px;
     }
 }

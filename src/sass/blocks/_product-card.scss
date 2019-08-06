@@ -13,11 +13,7 @@
 
 }
 
-.product-card__description {
-    margin-bottom: 24px;
-}
-
-.product-card__description h1 {
+.product-card__title {
     margin-bottom: 8px;
     font-weight: 700;
     font-size: 30px;
@@ -25,6 +21,14 @@
     font-family: "Coves", Tahoma, sans-serif;
     text-align: left;
     color: #8a9b7c;
+
+    &--mobile {
+        display: none;
+    }
+}
+
+.product-card__description {
+    margin-bottom: 24px;
 }
 
 .product-card__description p,
@@ -71,6 +75,10 @@
     display: flex;
     flex-direction: column;
     width: 340px;
+
+    &--mobile {
+        display: none;
+    }
 }
 
 .product-card__price {
@@ -132,18 +140,94 @@
     min-width: 250px;
 }
 
-.product-card__decor-1 {
-    top: -180px;
-    left: -75px;
-}
-
-.product-card__decor-2 {
+.product-card__decor {
+    top: 160px;
     right: -230px;
-    bottom: -20px;
 }
 
-@media screen and (max-width: 1650px) {
-    .product-card__decor-1 {
-        left: -135px;
+@media screen and (max-width: 1530px) {
+    .product-card__decor {
+        right: -285px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .product-card__decor {
+        top: -50px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .product-card__decor {
+        top: -120px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .product-card__title {
+        margin-bottom: 15px;
+    }
+
+    .product-card__actions-box {
+        width: 100%;
+        margin-bottom: 30px;
+
+        &--mobile {
+            display: block;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    .product-card__price {
+        margin-bottom: 35px;
+        text-align: left;
+    }
+
+    .product-card__prices {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+    }
+
+    .product-card__prices span {
+        margin-left: 20px;
+    }
+
+    .product-card__quantity {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .product-card__title {
+        &--mobile {
+            display: block;
+            margin-bottom: 45px;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    .product-card__left {
+        width: 370px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .product-card__decor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .product-card__left {
+        margin-bottom: 80px;
     }
 }

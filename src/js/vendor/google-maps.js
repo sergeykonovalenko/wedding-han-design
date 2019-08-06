@@ -4,9 +4,12 @@ function initMap() {
 
     let element = document.getElementById('google-map');
 
+    let locationLat = +mapLocation.lat;
+    let locationLng = +mapLocation.lng;
+
     let options = {
         zoom: 17,
-        center: {lat:52.868338, lng:-1.343672},
+        center: {lat:locationLat, lng:locationLng},
         scrollwheel: false
     };
 
@@ -15,12 +18,12 @@ function initMap() {
 
     // marker and info-window
     let marker = new google.maps.Marker({
-        position: {lat:52.868338, lng:-1.343672},
+        position: {lat:locationLat, lng:locationLng},
         map: myMap
     });
 
     let InfoWindow = new google.maps.InfoWindow({
-        content: '<div class="info-window"><strong>Wedding HanDesign</strong><p>Wedding accessories for wedding planning</p><a href="tel:08000850585">0800 085 0585</a></div>'
+        content: '<div class="info-window"><strong>' + siteName + '</strong><p>' + siteDescription + '</p><a href="tel:' + phone + '">' + phone + '</a></div>'
     });
 
     marker.addListener('click', function () {

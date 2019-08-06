@@ -1,0 +1,29 @@
+.error-404 {
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.error-404__title {
+    margin-bottom: 48px;
+    line-height: 1.2em;
+}
+
+.error-404__subtitle {
+    margin-bottom: 53px;
+    text-align: center;
+}
+
+.error-404__subtitle a {
+    color: #8a9b7c;
+
+    &:hover {
+        color: #616e56;
+        text-decoration: none;
+    }
+}
+
+.error-404__search {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}

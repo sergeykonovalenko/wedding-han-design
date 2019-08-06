@@ -1,11 +1,11 @@
 .category {
     position: relative;
     display: block;
-    width: 318px;
-    height: 332px;
+    width: 281px;
+    height: 293px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px 1px rgba(83, 80, 80, 0.29);
+    box-shadow: 3px 3px 15px 1px rgba(83, 80, 80, 0.29);
 
     &:hover .category__img,
     &:focus .category__img {
@@ -31,10 +31,11 @@
     margin: 0;
     padding: 0 15px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 1;
     font-family: "Coves", Tahoma, sans-serif;
     letter-spacing: 0.2em;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
     background-color: rgba(162, 172, 154, .9);
@@ -43,8 +44,8 @@
 }
 
 .category__img {
-    width: 318px;
-    height: 332px;
+    width: 281px;
+    height: 293px;
     border-radius: 15px;
     transition: transform .3s ease-in;
 }

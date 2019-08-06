@@ -1,4 +1,4 @@
-@media screen and (min-width: 1360px) {
+@media screen and (min-width: 1530px) {
     .top-nav {
         border: 1px solid #cdcdcd;
     }
@@ -17,6 +17,8 @@
         display: flex;
         flex-grow: 1;
 
+        &.current-menu-parent > a,
+        &.current-menu-ancestor > a,
         &:hover > a,
         &:focus-within > a {
             text-decoration: none;
@@ -59,7 +61,8 @@
         background-color: #8a9b7c;
     }
 
-    .top-nav__list .menu-item--sale a {
+    // sale item
+    .top-nav__list > li:last-child a {
         padding-top: 8px;
         padding-bottom: 8px;
         font-size: 20px;
@@ -72,17 +75,19 @@
         }
     }
 
-    .top-nav__list .menu-item--sale.current-menu-item > a {
+    // sale item
+    .top-nav__list > li:last-child.current-menu-item > a {
         background-color: #bb9b97;
     }
 
-    .top-nav__list .menu-item--sale a span {
+    // sale item
+    .top-nav__list li:last-child a span {
         margin-left: 8px;
         font-weight: 300;
         font-family: Arial, Tahoma, sans-serif;
     }
 
-    .sub-menu {
+    .top-nav .sub-menu {
         @include reset-list;
 
         position: absolute;
@@ -121,6 +126,11 @@
         }
     }
 
+    .top-nav__list > li > .sub-menu > .current-menu-item > a,
+    .top-nav__list > li > .sub-menu > .current-menu-parent > a {
+        color: #9d824f;
+    }
+
     .top-nav__list > li > .sub-menu > li > a {
         display: block;
         padding: 7px 15px 7px 20px;
@@ -148,14 +158,14 @@
     }
 
     /***** third level submenu *****/
-    .sub-menu .sub-menu {
+    .top-nav__list .sub-menu .sub-menu {
         top: -11px;
         left: 100%;
         width: 180px;
         padding: 14px 0;
     }
 
-    .sub-menu .sub-menu > li > a {
+    .top-nav__list .sub-menu .sub-menu > li > a {
         display: block;
         padding: 0 15px 0 35px;
         font-size: 16px;
@@ -167,5 +177,39 @@
             text-decoration: none;
             color: #9d824f;
         }
+    }
+
+    .top-nav__list .sub-menu .sub-menu > .current-menu-item > a {
+        color: #9d824f;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    #js-top-nav:not(.mm-menu) {
+        display: none;
+    }
+
+    .top-nav .current-menu-item,
+    .top-nav .current-menu-parent,
+    .top-nav .current-menu-ancestor,
+    .top-nav .current_page_parent,
+    .top-nav .current_page_item {
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #8a9b7c;
+        }
+
+    }
+}
+
+@media screen and (width: 1530px) {
+    #js-top-nav:not(.mm-menu) {
+        display: block;
     }
 }

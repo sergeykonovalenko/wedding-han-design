@@ -15,8 +15,8 @@
 }
 
 .modal-order__close {
-    top: -10px;
-    right: -55px;
+    top: -20px;
+    right: -80px;
 }
 
 .modal-order .order__box {
@@ -48,5 +48,20 @@
 @media (min-width: 1260px) {
     .modal-order .modal-dialog {
         max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1330px) {
+    .modal-order .modal-order__close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal-order__close svg {
+        width: 100%;
+        height: auto;
+        fill: #5c5c57;
     }
 }

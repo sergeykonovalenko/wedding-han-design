@@ -7,8 +7,14 @@
     margin-bottom: 12px;
 }
 
-@media (min-width: 1431px) {
+@media (min-width: 1330px) {
     .section-slider .container {
-        max-width: 1388px;
+        max-width: 1270px;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    .section-slider__title {
+        margin-bottom: 42px;
     }
 }

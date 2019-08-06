@@ -20,3 +20,22 @@
         right: -280px;
     }
 }
+
+@media screen and (max-width: 1530px) {
+    .triggers-product__decor-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .triggers-product__decor-2 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .triggers-product__decor-1,
+    .triggers-product__decor-2 {
+        display: none;
+    }
+}

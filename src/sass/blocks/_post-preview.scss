@@ -3,13 +3,13 @@
 }
 
 .post-preview__title {
-    margin-bottom: 60px;
-}
-
-.post-preview__title a {
+    margin-bottom: 64px;
     font-weight: 700;
     font-size: 48px;
     font-family: "Coves", Tahoma, sans-serif;
+}
+
+.post-preview__title a {
     color: #9d824f;
     transition: all .15s ease-in;
 
@@ -26,10 +26,21 @@
 
 .post-preview__img-link {
     display: block;
-    margin-right: 30px;
+
+    &--mobile {
+        display: none;
+    }
+
+    .posts-list__item:nth-child(even) & {
+        order: 2;
+    }
+
+    .posts-list__item:nth-child(odd) & {
+        margin-right: 30px;
+    }
 }
 
-.post-preview__img-link img {
+.post-preview__img {
     width: 570px;
     height: 578px;
     border-radius: 4px;
@@ -39,6 +50,11 @@
     display: flex;
     flex-direction: column;
     width: 570px;
+
+    .posts-list__item:nth-child(even) & {
+        order: 1;
+        margin-right: 30px;
+    }
 }
 
 .post-preview__author {
@@ -52,6 +68,12 @@
 .post-preview__text p {
     margin-bottom: 0;
     line-height: 1.25em;
+}
+
+.post-preview__more-box-mobile {
+    display: none;
+    margin-top: 15px;
+    text-align: right;
 }
 
 .post-preview__more {
@@ -73,4 +95,78 @@
 .post-preview__more span {
     position: relative;
     top: 3px;
+}
+
+@media screen and (max-width: 1260px) {
+    .post-preview__box {
+        .posts-list__item:nth-child(even) & {
+            margin-right: 0;
+        }
+    }
+
+    .posts-list__item:nth-child(even) {
+        & .post-preview__img-link {
+            float: right;
+            margin-left: 30px;
+        }
+    }
+
+    .post-preview__img-link {
+        &--desktop {
+            display: none;
+        }
+        
+        &--mobile {
+            display: block;
+            float: left;
+        }
+    }
+
+    .post-preview__img {
+        width: 400px;
+        height: auto;
+    }
+
+    .post-preview__box {
+        width: 100%;
+    }
+
+    .post-preview__text {
+         margin-bottom: 0;
+    }
+
+    .post-preview__more-box-mobile {
+        display: block;
+    }
+
+    .post-preview__more {
+        &--desktop {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .post-preview__img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .post-preview__img-link--mobile {
+        float: none;
+        margin-bottom: 20px;
+
+        .posts-list__item:nth-child(odd) & {
+            margin-right: 0;
+        }
+
+        .posts-list__item:nth-child(even) & {
+            margin-left: 0;
+        }
+    }
+
+    .post-preview__img {
+        width: 100%;
+    }
 }

@@ -105,7 +105,7 @@
 
 .order__fields-box {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
 }
 
 .order__list {
@@ -205,4 +205,67 @@
     z-index: 1;
     right: -156px;
     bottom: -99px;
+}
+
+@media screen and (max-width: 1260px) {
+    .order__box,
+    .order--inner .order__box {
+        width: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .order--inner .order__list {
+        width: 405px;
+    }
+
+    .order--inner .order__item--textarea {
+        width: 405px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .order__fields-box {
+        display: block;
+    }
+
+    .order--inner .order__form {
+         width: 470px;
+    }
+
+    .order--inner .order__list {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .order--inner .order__item--textarea {
+        width: 100%;
+    }
+
+    .order--inner .order__button {
+         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order__form,
+    .order--inner .order__form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .order__box,
+    .order--inner .order__box {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .order__button {
+        min-width: 100%;
+    }
+
+    .order__decor-2 {
+        display: none;
+    }
 }

@@ -18,22 +18,22 @@
 
 }
 
-.main-header__extra-nav {
+.main-header__left-nav {
     @include reset-list;
 
     display: flex;
     align-items: center;
 }
 
-.main-header__extra-nav li {
+.main-header__left-nav li {
     margin-right: 19px;
 }
 
-.main-header__extra-nav li:last-child {
+.main-header__left-nav li:last-child {
     margin-right: 0;
 }
 
-.main-header__extra-nav a {
+.main-header__left-nav a {
     display: flex;
     align-items: center;
     height: 40px;
@@ -50,11 +50,11 @@
     }
 }
 
-.main-header__extra-nav li.current-menu-item a {
+.main-header__left-nav li.current-menu-item a {
     color: #9d824f;
 }
 
-.main-header__extra-nav li:first-child a {
+.main-header__left-nav li:first-child a {
     padding: 0 14px;
     color: #fff;
     background-color: #d0aeaa;
@@ -67,7 +67,7 @@
     }
 }
 
-.main-header__extra-nav li.current-menu-item:first-child a {
+.main-header__left-nav li.current-menu-item:first-child a {
     background-color: #bb9b97;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .no-js .main-header__contacts li:nth-child(1) a::before,
-.no-webp .order {
+.no-webp .main-header__contacts li:nth-child(1) a::before {
     background-image: url("img/bg/contact-phone-icon.png");
 }
 
@@ -133,7 +133,7 @@
 }
 
 .no-js .main-header__contacts li:nth-child(2) a::before,
-.no-webp .order {
+.no-webp .main-header__contacts li:nth-child(2) a::before {
     background-image: url("img/bg/contact-email-icon.png");
 }
 
@@ -141,7 +141,12 @@
     background-image: url("img/bg/contact-email-icon.webp");
 }
 
-.main-header__contacts-link {
+.main-header__right-nav {
+    @include reset-list;
+}
+
+.main-header__right-nav a {
+    display: block;
     font-size: 18px;
     color: #000;
     transition: all .15s ease-in;
@@ -154,6 +159,10 @@
     }
 }
 
+.main-header__right-nav .current-menu-item a {
+    color: #9d824f;
+}
+
 .main-header__search {
     position: relative;
     margin-left: auto;
@@ -161,12 +170,6 @@
 
 .main-header__logo {
     margin: -74px auto 25px;
-}
-
-@media (min-width: 576px) {
-    .mobile-header .container {
-        max-width: 100%;
-    }
 }
 
 @media (min-width: 1360px) {
@@ -181,9 +184,9 @@
     }
 }
 
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1530px) {
     .main-header {
-        padding-top: 0;
+        padding-top: 50px;
         padding-bottom: 40px;
     }
 
@@ -230,7 +233,7 @@
         margin-right: 0;
     }
 
-    .main-header__contacts-link {
+    .main-header__right-nav {
         display: none;
     }
 
@@ -244,5 +247,29 @@
     .main-header__contacts-box {
         order: 2;
         margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-header__contacts {
+        display: block;
+    }
+
+    .main-header__contacts li {
+        margin-right: 0;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .main-header__contacts a {
+        display: inline-flex;
+        vertical-align: middle;
+    }
+
+    .main-header .main-header__search {
+        width: 100%;
     }
 }

@@ -4,11 +4,12 @@
     padding-bottom: 185px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .no-js .contacts-letter,
 .no-webp .contacts-letter {
-    background-image: url("img/bg/contacts-letter.jpg");
+    background-image: url("img/bg/contacts-letter.png");
 }
 
 .webp .contacts-letter {
@@ -17,7 +18,6 @@
 
 .contacts-letter__box {
     position: relative;
-    margin-left: 21px;
 }
 
 .contacts-letter__list {
@@ -64,7 +64,7 @@
 
 /////
 .no-js .contacts-letter__list li:nth-child(1) a::before,
-.no-webp .order {
+.no-webp .contacts-letter__list li:nth-child(1) a::before {
     background-image: url("img/bg/contact-marker-icon.png");
 }
 
@@ -74,7 +74,7 @@
 
 /////
 .no-js .contacts-letter__list li:nth-child(2) a::before,
-.no-webp .order {
+.no-webp .contacts-letter__list li:nth-child(2) a::before {
     background-image: url("img/bg/contact-email-icon.png");
 }
 
@@ -84,7 +84,7 @@
 
 /////
 .no-js .contacts-letter__list li:nth-child(3) a::before,
-.no-webp .order {
+.no-webp .contacts-letter__list li:nth-child(3) a::before {
     background-image: url("img/bg/contact-phone-icon.png");
 }
 
@@ -95,4 +95,23 @@
 .contacts-letter__decor {
     top: 50px;
     left: -230px;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts-letter__decor {
+        top: -20px;
+        left: -330px;
+    }
+
+    .contacts-letter__list {
+        left: 50%;
+        bottom: 12px;
+        transform: translate(-50%, 0);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contacts-letter__decor {
+        left: -370px;
+    }
 }

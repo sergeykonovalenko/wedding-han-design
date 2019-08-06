@@ -1,11 +1,15 @@
 .index-wrapper {
     padding: 145px 0;
     background-repeat: no-repeat;
-    background-position: calc(50% + 565px) 36vh;
 }
 
 body:not(.is-mobile) .index-wrapper {
+    background-position: calc(50% + 565px) 36vh;
     background-attachment: fixed;
+}
+
+body.is-mobile .index-wrapper {
+    background-position: calc(50% + 565px) 400px;
 }
 
 .no-js .index-wrapper,
@@ -15,4 +19,16 @@ body:not(.is-mobile) .index-wrapper {
 
 .webp .index-wrapper {
     background-image: url("img/bg/about-home.webp");
+}
+
+@media screen and (max-width: 992px) {
+    .index-wrapper {
+        padding-top: 120px;
+
+        .no-js &,
+        .no-webp &,
+        .webp & {
+            background-image: none;
+        }
+    }
 }

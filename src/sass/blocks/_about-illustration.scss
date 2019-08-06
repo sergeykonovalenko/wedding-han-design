@@ -73,3 +73,10 @@
         top: 0;
     }
 }
+
+@media screen and (max-width: 1530px) {
+    .about-illustration__decor,
+    .about-illustration::after {
+        display: none;
+    }
+}

@@ -13,6 +13,16 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    &:first-child svg {
+        width: 13px;
+        height: auto;
+    }
+
+    &:last-child svg {
+        width: 26px;
+        height: auto;
+    }
 }
 
 .social-box--horizontal .social-box__item {
@@ -32,8 +42,8 @@
     cursor: pointer;
 
     .social-box--vertical & {
-        width: 44px;
-        height: 112px;
+        width: 35px;
+        height: 90px;
     }
 
     .social-box--horizontal & {

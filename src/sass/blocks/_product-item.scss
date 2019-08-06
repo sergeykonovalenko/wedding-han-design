@@ -2,12 +2,12 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 318px;
+    width: 281px;
     text-align: center;
     color: #303030;
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 5px 20px 1px rgba(83, 80, 80, 0.29);
+    box-shadow: 3px 3px 15px 1px rgba(83, 80, 80, 0.29);
     cursor: pointer;
 
     &:hover .product-item__img,
@@ -31,15 +31,15 @@
 
 .product-item__img-box {
     margin: 0;
-    width: 318px;
-    height: 332px;
+    width: 281px;
+    height: 293px;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
 }
 
 .product-item__img {
-    width: 318px;
-    height: 332px;
+    width: 281px;
+    height: 293px;
     border-radius: 15px 15px 0 0;
     transition: transform .3s ease-in;
 }
@@ -47,59 +47,34 @@
 .product-item__text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
     padding: 10px 15px 15px;
 }
 
 .product-item__name {
-    position: relative;
-    margin-bottom: 6px;
-    padding-bottom: 12px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25em;
-    font-family: "Coves", Tahoma, sans-serif;
-    color: #303030;
-    transition: all .15s ease-in;
-
-    &--sale {
-        margin-bottom: 16px;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 85px;
-        height: 1px;
-        background-color: #cbcbcb;
-        transform: translate(-50%, 0);
-        transition: background-color .15s ease-in;
-    }
-}
-
-.product-item__info {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 1.2em;
+    font-family: "Coves", Tahoma, sans-serif;
     transition: all .15s ease-in;
 }
 
 .product-item__price {
-    margin-top: auto;
     margin-bottom: 0;
     font-weight: 700;
+    line-height: 1;
     color: #be6461;
 }
 
 .product-item__price-new {
     display: block;
-    line-height: 1;
+    margin-bottom: 9px;
     text-decoration: none;
 }
 
 .product-item__price-old {
+    display: block;
     font-size: 20px;
     color: #f50b0b;
 }
@@ -129,4 +104,20 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .product-item {
+        &:hover .product-item__img,
+        &:focus .product-item__img {
+            transform: none;
+        }
+    }
+}
 
+@media screen and (max-width: 311px) {
+    .product-item,
+    .product-item__img-box,
+    .product-item__img {
+        width: 100%;
+        height: auto;
+    }
+}

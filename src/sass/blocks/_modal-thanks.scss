@@ -46,3 +46,18 @@
         max-width: 770px;
     }
 }
+
+@media screen and (max-width: 930px) {
+    .modal-thanks__close {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal-thanks__close svg {
+        width: 100%;
+        height: auto;
+        fill: #5c5c57;
+    }
+}

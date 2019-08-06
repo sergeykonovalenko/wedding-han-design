@@ -26,3 +26,45 @@
     height: 392px;
     border-radius: 15px;
 }
+
+@media screen and (max-width: 1260px) {
+    .gallery-tip__img {
+        width: 295px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .gallery-tip__item {
+        margin-right: 15px;
+    }
+
+    .gallery-tip__img {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-tip__img {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery-tip {
+        display: block;
+    }
+
+    .gallery-tip__item {
+        margin-right: 0;
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .gallery-tip__img {
+        width: 100%;
+    }
+}

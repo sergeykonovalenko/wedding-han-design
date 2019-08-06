@@ -100,6 +100,16 @@
 
 .offer-wedding-tip__desc h1 {
     font-size: 40px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 300px;
+        max-width: 100%;
+        height: 2px;
+        margin: 25px auto 0;
+        background-color: #9d824f;
+    }
 }
 
 .offer-wedding-tip__desc h2 {
@@ -127,4 +137,47 @@
 .offer-wedding-tip__decor {
     top: 130px;
     right: -230px;
+}
+
+@media screen and (max-width: 1530px) {
+    .offer-wedding-tip {
+        background-position: -370px 0px;
+    }
+
+    .offer-wedding-tip__decor {
+        right: -250px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .offer-wedding-tip {
+        background-position: -450px 0px;
+    }
+
+    .offer-wedding-tip__decor {
+        right: -270px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .offer-wedding-tip {
+        .no-js &,
+        .no-webp &,
+        .webp & {
+            background-image: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer-wedding-tip__decor {
+        display: none;
+    }
+}
+
+// additional
+@media screen and (width: 768px) {
+    .offer-wedding-tip__decor {
+        display: block;
+    }
 }

@@ -1,0 +1,31 @@
+.posts {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -280px;
+        bottom: -550px;
+        z-index: 1;
+        width: 667px;
+        height: 574px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+
+        .no-js &,
+        .no-webp & {
+            background-image: url("img/bg/rose.png");
+        }
+
+        .webp & {
+            background-image: url("img/bg/rose.webp");
+        }
+    }
+}
+
+.posts .container {
+    position: relative;
+    z-index: 2;
+}

@@ -1,0 +1,11 @@
+.posts-list {
+    @include reset-list;
+}
+
+.posts-list__item {
+    margin-bottom: 118px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

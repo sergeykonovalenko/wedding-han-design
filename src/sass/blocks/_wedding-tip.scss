@@ -54,7 +54,7 @@
 
 .wedding-tip__button-box {
     position: absolute;
-    bottom: 73px;
+    top: 428px;
     left: 15px;
     z-index: 2;
     margin-bottom: 0;
@@ -67,6 +67,8 @@
 
 .wedding-tip__button {
     min-width: 231px;
+    max-width: 350px;
+    padding-right: 40px;
 }
 
 .wedding-tip__button-decor {
@@ -76,4 +78,36 @@
 
 .wedding-tip__gallery {
     margin: 33px 0 0 0;
+}
+
+@media screen and (max-width: 1260px) {
+    .wedding-tip__button-box {
+        top: 349px;
+    }
+
+    .wedding-tip__button {
+        max-width: 278px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wedding-tip__button-box {
+        position: static;
+
+        &--reflected {
+            text-align: right;
+        }
+    }
+
+    .wedding-tip__button {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wedding-tip__button-box {
+        &--reflected {
+            text-align: left;
+        }
+    }
 }

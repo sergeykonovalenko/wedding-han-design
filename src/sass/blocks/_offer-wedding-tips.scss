@@ -1,16 +1,13 @@
 .offer-wedding-tips {
     text-align: center;
     background-color: #e0d6c1;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-    .no-js &,
-    .no-webp & {
-        background-image: url("img/bg/offer-wedding-tips.jpg");
-    }
-
-    .webp & {
-        background-image: url("img/bg/offer-wedding-tips.webp");
-    }
+    //.no-js &,
+    //.no-webp & {
+    //    background-image: url("img/bg/offer-wedding-tips.jpg");
+    //}
+    //
+    //.webp & {
+    //    background-image: url("img/bg/offer-wedding-tips.webp");
+    //}
 }

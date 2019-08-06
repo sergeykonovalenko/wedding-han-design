@@ -1,3 +1,9 @@
+/*
+Theme Name: Wedding HanDesign
+Author: Sergey Konovalenko
+Author URI: mailto:sergeykonovalenko5550199@gmail.com
+*/
+
 /* ==========================================================================
    FONTS
    ========================================================================== */
@@ -17,6 +23,8 @@
 @import "blocks/mobile-header";
 @import "blocks/search";
 @import "blocks/top-nav";
+@import "blocks/mm-listitem";
+@import "blocks/mm-wrapper";
 @import "blocks/social-top-nav";
 @import "blocks/social-top-nav";
 @import "blocks/offer-home";
@@ -31,10 +39,9 @@
 @import "blocks/contacts-letter";
 @import "blocks/main-footer";
 /* ==========================================================================
-   WEDDING TRENDS
+   TAXONOMY 1ST AND 2ND LEVEL
    ========================================================================== */
 @import "blocks/offer-internal";
-@import "blocks/offer-wedding-trends";
 @import "blocks/main";
 @import "blocks/extra-menu";
 @import "blocks/main-products";
@@ -42,11 +49,18 @@
 @import "blocks/product-item";
 @import "blocks/page-info";
 @import "blocks/wp-pagenavi";
+@import "blocks/no-products-found";
 @import "blocks/main-text";
+/* ==========================================================================
+   TAXONOMY 1ST AND 2ND LEVEL HAS CHILDREN
+   ========================================================================== */
+@import "blocks/categories";
+@import "blocks/category";
 /* ==========================================================================
    PRODUCT PAGE
    ========================================================================== */
 @import "blocks/product-card";
+@import "blocks/breadcrumbs-box";
 @import "blocks/breadcrumbs";
 @import "blocks/nice-number";
 @import "blocks/gallery";
@@ -64,11 +78,6 @@
 @import "blocks/main-sale";
 @import "blocks/main-text-sale";
 /* ==========================================================================
-   WEDDING INVITATIONS
-   ========================================================================== */
-@import "blocks/categories";
-@import "blocks/category";
-/* ==========================================================================
    CONTACTS
    ========================================================================== */
 @import "blocks/offer-contacts";
@@ -85,6 +94,8 @@
    ========================================================================== */
 @import "blocks/offer-wedding-tips";
 @import "blocks/main-posts";
+@import "blocks/posts";
+@import "blocks/posts-list";
 @import "blocks/post-preview";
 @import "blocks/author";
 @import "blocks/desc-posts";
@@ -97,14 +108,31 @@
 @import "blocks/collage";
 @import "blocks/gallery-tip";
 /* ==========================================================================
-   TERMS & CONDITIONS
+   INFO PAGE
    ========================================================================== */
 @import "blocks/main-info-page";
 @import "blocks/content";
+@import "blocks/decor-list";
+/* ==========================================================================
+   SITE MAP
+   ========================================================================== */
+@import "blocks/site-map";
+/* ==========================================================================
+   SEARCH PAGE
+   ========================================================================== */
+@import "blocks/search-page";
+@import "blocks/page-list";
+/* ==========================================================================
+   ERROR 404
+   ========================================================================== */
+@import "blocks/error-404";
 /* Modal order
    ========================================================================== */
 @import "blocks/modal-order";
 @import "blocks/modal-close";
+/* Loader
+   ========================================================================== */
+@import "blocks/loader";
 /* Modal thanks
    ========================================================================== */
 @import "blocks/modal-thanks";
